@@ -1,0 +1,34 @@
+sector,sub_sector,label,id,parent,value_rm_mil,share_total_pct,share_in_sector_pct,value_mar2025_rm_mil,value_feb2026_rm_mil
+AGRICULTURE,Palm Oil and Palm-Based Products,Palm Oil and Palm-Based Products,AGRICULTURE > Palm Oil and Palm-Based Products,AGRICULTURE,5451.02,3.71,72.18,5804.64,5505.44
+AGRICULTURE,Other Agriculture,Other Agriculture,AGRICULTURE > Other Agriculture,AGRICULTURE,922.68,0.63,12.22,1110.52,859.29
+AGRICULTURE,Other Vegetables Oil,Other Vegetables Oil,AGRICULTURE > Other Vegetables Oil,AGRICULTURE,433.41,0.29,5.74,311.44,286.04
+AGRICULTURE,Natural Rubber,Natural Rubber,AGRICULTURE > Natural Rubber,AGRICULTURE,259.41,0.18,3.43,479.44,260.78
+AGRICULTURE,Sawn Timber & Moulding,Sawn Timber & Moulding,AGRICULTURE > Sawn Timber & Moulding,AGRICULTURE,250.35,0.17,3.31,239.01,187.26
+AGRICULTURE,"Seafood, fresh, chilled or frozen","Seafood, fresh, chilled or frozen","AGRICULTURE > Seafood, fresh, chilled or frozen",AGRICULTURE,191.81,0.13,2.54,211.86,153.08
+AGRICULTURE,Sawlog,Sawlog,AGRICULTURE > Sawlog,AGRICULTURE,43.69,0.03,0.58,30.78,32.48
+MANUFACTURING,Electrical & Electronic  Products (E&E),Electrical & Electronic  Products (E&E),MANUFACTURING > Electrical & Electronic  Products (E&E),MANUFACTURING,71668.52,48.73,54.78,62296.94,60825.28
+MANUFACTURING,Petroleum Products,Petroleum Products,MANUFACTURING > Petroleum Products,MANUFACTURING,9268.5,6.3,7.08,7495.25,7118.18
+MANUFACTURING,Other Manufactures,Other Manufactures,MANUFACTURING > Other Manufactures,MANUFACTURING,7818.94,5.32,5.98,5378.68,8103.42
+MANUFACTURING,"Machinery, Equipment And Parts","Machinery, Equipment And Parts","MANUFACTURING > Machinery, Equipment And Parts",MANUFACTURING,7221.04,4.91,5.52,7054.79,5764.22
+MANUFACTURING,Manufacture Of Metal,Manufacture Of Metal,MANUFACTURING > Manufacture Of Metal,MANUFACTURING,6767.19,4.6,5.17,5581.19,4655.37
+MANUFACTURING,Optical & Scientific Equipment,Optical & Scientific Equipment,MANUFACTURING > Optical & Scientific Equipment,MANUFACTURING,6656.54,4.53,5.09,5149.52,6699.46
+MANUFACTURING,Chemical And Chemical Products (Exclude Plastics In Non-Primary Forms),Chemical And Chemical Products (Exclude Plastics In Non-Primary Forms),MANUFACTURING > Chemical And Chemical Products (Exclude Plastics In Non-Primary Forms),MANUFACTURING,4784.77,3.25,3.66,5988.17,4642.55
+MANUFACTURING,Palm Oil-Based Manufactured Products,Palm Oil-Based Manufactured Products,MANUFACTURING > Palm Oil-Based Manufactured Products,MANUFACTURING,3005.42,2.04,2.3,3172.82,3064.19
+MANUFACTURING,Processed Food,Processed Food,MANUFACTURING > Processed Food,MANUFACTURING,2555.76,1.74,1.95,3459.26,2569.31
+MANUFACTURING,Rubber Products,Rubber Products,MANUFACTURING > Rubber Products,MANUFACTURING,1723.91,1.17,1.32,2212.84,1556.5
+MANUFACTURING,Transport Equipment,Transport Equipment,MANUFACTURING > Transport Equipment,MANUFACTURING,1602.49,1.09,1.22,1515.0,1373.7
+MANUFACTURING,Iron And Steel Products,Iron And Steel Products,MANUFACTURING > Iron And Steel Products,MANUFACTURING,1377.08,0.94,1.05,2594.8,1818.9
+MANUFACTURING,Manufacture Of Plastics,Manufacture Of Plastics,MANUFACTURING > Manufacture Of Plastics,MANUFACTURING,1375.85,0.94,1.05,1417.09,1111.61
+MANUFACTURING,"Textiles,  Apparels And Footwear","Textiles,  Apparels And Footwear","MANUFACTURING > Textiles,  Apparels And Footwear",MANUFACTURING,1265.22,0.86,0.97,1323.62,1195.63
+MANUFACTURING,Non-Metallic Mineral Products,Non-Metallic Mineral Products,MANUFACTURING > Non-Metallic Mineral Products,MANUFACTURING,1061.96,0.72,0.81,1205.07,966.69
+MANUFACTURING,Paper & Pulp Products,Paper & Pulp Products,MANUFACTURING > Paper & Pulp Products,MANUFACTURING,994.83,0.68,0.76,1078.01,799.04
+MANUFACTURING,Wood Products,Wood Products,MANUFACTURING > Wood Products,MANUFACTURING,950.25,0.65,0.73,1238.29,903.3
+MANUFACTURING,Jewellery,Jewellery,MANUFACTURING > Jewellery,MANUFACTURING,509.18,0.35,0.39,884.32,801.9
+MANUFACTURING,Beverages & Tobacco,Beverages & Tobacco,MANUFACTURING > Beverages & Tobacco,MANUFACTURING,223.66,0.15,0.17,271.77,192.42
+MINING,Liquefied Natural Gas (LNG),Liquefied Natural Gas (LNG),MINING > Liquefied Natural Gas (LNG),MINING,4512.05,3.07,51.89,5472.03,3463.31
+MINING,Metalliferous Ores and Metal Scrap,Metalliferous Ores and Metal Scrap,MINING > Metalliferous Ores and Metal Scrap,MINING,1775.72,1.21,20.42,648.57,2964.27
+MINING,Crude Petroleum,Crude Petroleum,MINING > Crude Petroleum,MINING,1632.4,1.11,18.77,1618.79,1210.64
+MINING,Condensates and other petroleum oil,Condensates and other petroleum oil,MINING > Condensates and other petroleum oil,MINING,570.72,0.39,6.56,690.48,226.72
+MINING,Tin,Tin,MINING > Tin,MINING,134.93,0.09,1.55,196.31,147.53
+MINING,Crude Fertilizers And Crude Minerals,Crude Fertilizers And Crude Minerals,MINING > Crude Fertilizers And Crude Minerals,MINING,68.62,0.05,0.79,104.17,100.54
+MINING,Other Mining,Other Mining,MINING > Other Mining,MINING,0.28,0.0,0.0,1.03,0.32
