@@ -1,0 +1,236 @@
+/* ─────────────────────────────────────────────
+   FIT2179 A2 — Global Trade: Malaysia & the World
+   style.css
+   A1 lessons applied:
+   - Colour-blind safe palette (no red+green)
+   - Consistent colour semantics across all charts
+   - Sans-serif typeface throughout
+   - Max 55ch line width (~12 words/line)
+   - Visual hierarchy via colour and weight
+───────────────────────────────────────────── */
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Tokens ── */
+:root {
+  --c-export:    #1D9E75;  /* teal   — exports, surplus */
+  --c-import:    #D85A30;  /* coral  — imports, deficit */
+  --c-malaysia:  #534AB7;  /* purple — Malaysia highlight */
+  --c-other:     #B4B2A9;  /* grey   — all other countries */
+  --c-annotation:#BA7517;  /* amber  — annotations, callouts */
+
+  --c-s1: #534AB7;   /* section 1 accent */
+  --c-s2: #185FA5;   /* section 2 accent */
+  --c-s3: #1D9E75;   /* section 3 accent */
+  --c-s4: #BA7517;   /* section 4 accent */
+
+  --bg:       #F9F8F6;
+  --surface:  #FFFFFF;
+  --border:   rgba(0,0,0,0.08);
+  --text-primary:   #1A1209;
+  --text-secondary: #5A5248;
+  --text-muted:     #918980;
+
+  --font: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --radius: 8px;
+  --max-prose: 55ch;  /* ~12 words per line — A1 lesson */
+}
+
+/* ── Base ── */
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Page wrapper ── */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px 60px;
+}
+
+/* ── HEADER ── */
+.page-header {
+  padding: 56px 0 40px;
+  border-bottom: 2px solid var(--text-primary);
+  margin-bottom: 52px;
+}
+
+.header-tag {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: 16px;
+  max-width: 700px;
+}
+
+.page-subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: var(--max-prose);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* ── Global legend ── */
+.legend-global {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: fit-content;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Sections ── */
+.viz-section {
+  margin-bottom: 72px;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 14px;
+  border-radius: 20px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.s1 { background: var(--c-s1); }
+.s2 { background: var(--c-s2); }
+.s3 { background: var(--c-s3); }
+.s4 { background: var(--c-s4); }
+
+.section-intro {
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: var(--max-prose);  /* A1 lesson: max ~12 words per line */
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+/* ── Chart blocks ── */
+.chart-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 24px 20px;
+  margin-bottom: 20px;
+}
+
+.chart-block.full { width: 100%; }
+
+/* ── Chart rows ── */
+.chart-row {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-row.cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* 2/3 + 1/3 split for area + lollipop */
+.chart-row.cols-3-2 {
+  grid-template-columns: 2fr 1.3fr;
+}
+
+/* ── Chart titles & captions ── */
+.chart-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 4px;
+  max-width: 52ch;  /* A1 lesson: keep lines short */
+}
+
+.chart-embed {
+  width: 100%;
+  margin: 12px 0 10px;
+}
+
+/* Remove Vega-Lite action buttons (cleaner look) */
+.chart-embed .vega-actions { display: none !important; }
+
+.chart-caption {
+  font-size: 12px;
+  color: var(--text-muted);
+  max-width: var(--max-prose);
+  line-height: 1.6;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  margin-top: 4px;
+}
+
+/* ── FOOTER ── */
+.page-footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 0 20px;
+  margin-top: 40px;
+}
+
+.footer-sources {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.footer-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.footer-meta strong, .footer-sources strong {
+  color: var(--text-primary);
+}
+
+/* ── Responsive ── */
+@media (max-width: 760px) {
+  .page-wrapper { padding: 0 16px 40px; }
+  .chart-row.cols-2,
+  .chart-row.cols-3-2 { grid-template-columns: 1fr; }
+  .page-title { font-size: 26px; }
+  .legend-global { gap: 12px; }
+}

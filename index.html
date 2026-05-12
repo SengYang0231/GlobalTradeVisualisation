@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Trade: Malaysia &amp; the World</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Vega-Lite stack -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="page-header">
+    <div class="header-tag">FIT2179 Data Visualisation &nbsp;·&nbsp; 2026</div>
+    <h1 class="page-title">Global Trade: Malaysia &amp; the World</h1>
+    <p class="page-subtitle">
+      How does Malaysia fit into the global trading picture?
+      Explore three decades of trade flows, key partners,
+      and the products Malaysia sells to the world.
+    </p>
+
+    <!-- Global legend — used consistently across all charts -->
+    <div class="legend-global">
+      <span class="legend-item">
+        <span class="legend-dot" style="background:#1D9E75"></span>Exports / surplus
+      </span>
+      <span class="legend-item">
+        <span class="legend-dot" style="background:#D85A30"></span>Imports / deficit
+      </span>
+      <span class="legend-item">
+        <span class="legend-dot" style="background:#534AB7"></span>Malaysia
+      </span>
+      <span class="legend-item">
+        <span class="legend-dot" style="background:#B4B2A9"></span>Other countries
+      </span>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 — The global trading landscape
+  ═══════════════════════════════════════════ -->
+  <section class="viz-section" id="section1">
+    <div class="section-label s1">① &nbsp;The global trading landscape</div>
+    <p class="section-intro">
+      Trade is the engine of modern economies.
+      But not all countries trade equally — wealth, geography,
+      and policy all shape how much a nation exports.
+      This section sets the global stage before zooming in on Malaysia.
+    </p>
+
+    <!-- Chart 1: World choropleth (full width) -->
+    <div class="chart-block full">
+      <h2 class="chart-title">Who trades the most? A world of exports</h2>
+      <div id="chart1" class="chart-embed" style="height:420px"></div>
+      <p class="chart-caption">
+        Countries shaded by merchandise exports as a share of GDP (%, latest available year).
+        Darker shades indicate higher trade dependency.
+        Malaysia is highlighted in purple.
+      </p>
+    </div>
+
+    <!-- Charts 2 + 3: side by side -->
+    <div class="chart-row cols-2">
+      <div class="chart-block">
+        <h2 class="chart-title">Top trading economies — where does Malaysia rank?</h2>
+        <div id="chart2" class="chart-embed" style="height:340px"></div>
+        <p class="chart-caption">
+          Malaysia ranks among the world's most trade-open economies.
+          Its trade-to-GDP ratio far exceeds most comparable nations.
+        </p>
+      </div>
+      <div class="chart-block">
+        <h2 class="chart-title">Richer countries trade more — but Malaysia punches above its weight</h2>
+        <div id="chart3" class="chart-embed" style="height:340px"></div>
+        <p class="chart-caption">
+          Malaysia's trade openness significantly exceeds what its income
+          level alone would predict, making it a trade-dependent outlier.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 — Malaysia's trade journey
+  ═══════════════════════════════════════════ -->
+  <section class="viz-section" id="section2">
+    <div class="section-label s2">② &nbsp;Malaysia's trade journey over time</div>
+    <p class="section-intro">
+      From a resource-exporting economy to a high-tech manufacturing hub,
+      Malaysia's trade has grown dramatically since 1990.
+      Global crises left visible scars, but recovery was always swift.
+    </p>
+
+    <div class="chart-row cols-3-2">
+      <div class="chart-block">
+        <h2 class="chart-title">Three decades of growth — exports, imports, and the crises in between</h2>
+        <div id="chart4" class="chart-embed" style="height:360px"></div>
+        <p class="chart-caption">
+          Exports (teal) have consistently outpaced imports (coral).
+          The shaded gap shows Malaysia's trade surplus over time.
+        </p>
+      </div>
+      <div class="chart-block">
+        <h2 class="chart-title">Malaysia has run a surplus every year since 1998</h2>
+        <div id="chart5" class="chart-embed" style="height:360px"></div>
+        <p class="chart-caption">
+          The 1997 Asian Financial Crisis caused Malaysia's only
+          sustained deficit in modern trade history.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — Who does Malaysia trade with?
+  ═══════════════════════════════════════════ -->
+  <section class="viz-section" id="section3">
+    <div class="section-label s3">③ &nbsp;Who does Malaysia trade with?</div>
+    <p class="section-intro">
+      China, Singapore, and the United States dominate Malaysia's trade network.
+      But those rankings have shifted dramatically over two decades,
+      reflecting broader geopolitical and economic realignments in Asia.
+    </p>
+
+    <!-- Chart 6: Arc flow map (full width) -->
+    <div class="chart-block full">
+      <h2 class="chart-title">Malaysia's trade web — flows to its top partners</h2>
+      <div id="chart6" class="chart-embed" style="height:460px"></div>
+      <p class="chart-caption">
+        Arc thickness represents trade volume (USD billions, 2023).
+        Teal arcs indicate export-heavy relationships;
+        coral arcs indicate import-heavy ones.
+      </p>
+    </div>
+
+    <div class="chart-row cols-2">
+      <div class="chart-block">
+        <h2 class="chart-title">China rises, Japan falls — partner rankings shift over two decades</h2>
+        <div id="chart7" class="chart-embed" style="height:360px"></div>
+        <p class="chart-caption">
+          China overtook the United States as Malaysia's top
+          trading partner around 2010 and has stayed there since.
+        </p>
+      </div>
+      <div class="chart-block">
+        <h2 class="chart-title">Surplus with the West, deficit with the East</h2>
+        <div id="chart8" class="chart-embed" style="height:360px"></div>
+        <p class="chart-caption">
+          Malaysia runs a bilateral surplus with the US and EU,
+          but a deficit with China and Japan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — What does Malaysia export?
+  ═══════════════════════════════════════════ -->
+  <section class="viz-section" id="section4">
+    <div class="section-label s4">④ &nbsp;What does Malaysia export?</div>
+    <p class="section-intro">
+      Electronics dominate Malaysia's export basket.
+      But the mix has shifted significantly since 2000 —
+      with petroleum rising sharply and electronics' share declining,
+      reflecting Malaysia's evolving industrial structure.
+    </p>
+
+    <div class="chart-row cols-2">
+      <div class="chart-block">
+        <h2 class="chart-title">Electronics dominate — Malaysia's export basket in 2026</h2>
+        <div id="chart9" class="chart-embed" style="height:420px"></div>
+        <p class="chart-caption">
+          Electrical and electronic products account for nearly
+          half of all Malaysian merchandise exports.
+        </p>
+      </div>
+      <div class="chart-block">
+        <h2 class="chart-title">A shifting basket — how Malaysia's exports changed from 2000 to 2023</h2>
+        <div id="chart10" class="chart-embed" style="height:420px"></div>
+        <p class="chart-caption">
+          Machinery's share fell from 63% to 46%, while petroleum
+          nearly doubled — a structural shift over two decades.
+        </p>
+      </div>
+    </div>
+
+    <!-- Chart 11: Stacked area (full width) -->
+    <div class="chart-block full">
+      <h2 class="chart-title">Two decades of exports — the rise and fall of each sector</h2>
+      <div id="chart11" class="chart-embed" style="height:380px"></div>
+      <p class="chart-caption">
+        Machinery and transport equipment (teal) has dominated throughout.
+        Petroleum (orange) surged during the 2000s commodity boom
+        before receding. Animal and vegetable oils (palm oil) remain steady.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="page-footer">
+    <div class="footer-sources">
+      <strong>Data sources:</strong>
+      Our World in Data (CEPII Merchandise Exports, World Bank) &nbsp;·&nbsp;
+      World Bank WITS Partner Timeseries &nbsp;·&nbsp;
+      Department of Statistics Malaysia (DOSM) &nbsp;·&nbsp;
+      OpenDOSM Trade by SITC Section
+    </div>
+    <div class="footer-meta">
+      FIT2179 Data Visualisation &nbsp;·&nbsp; Lim Seng Yang &nbsp;·&nbsp; 2025 &nbsp;·&nbsp;
+      Built with Vega-Lite 5 &nbsp;·&nbsp;
+      AI assistance: Claude (Anthropic) — used for planning, data preprocessing, and debugging
+    </div>
+  </footer>
+
+</div><!-- end page-wrapper -->
+
+<script src="js/charts.js"></script>
+</body>
+</html>
