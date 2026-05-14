@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Top 10 trading economies by trade as % of GDP. Malaysia highlighted in purple.",
+  "width": "container",
+  "height": 320,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/top10_exporters.csv" },
+  "layer": [
+    {
+      "mark": { "type": "bar", "cornerRadiusEnd": 3 },
+      "encoding": {
+        "y": {
+          "field": "country",
+          "type": "nominal",
+          "sort": "-x",
+          "axis": { "title": null, "labelFontSize": 12, "labelLimit": 180 }
+        },
+        "x": {
+          "field": "trade_pct_gdp",
+          "type": "quantitative",
+          "axis": {
+            "title": "Trade as % of GDP",
+            "titleFontSize": 11,
+            "grid": false,
+            "tickCount": 5
+          }
+        },
+        "color": {
+          "condition": { "test": "datum.highlight == 'True'", "value": "#534AB7" },
+          "value": "#B4B2A9"
+        },
+        "tooltip": [
+          { "field": "country", "type": "nominal", "title": "Country" },
+          { "field": "trade_pct_gdp", "type": "quantitative",
+            "format": ".1f", "title": "Trade % of GDP" }
+        ]
+      }
+    },
+    {
+      "transform": [{ "filter": "datum.highlight == 'True'" }],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#534AB7"
+      },
+      "encoding": {
+        "y": { "field": "country", "type": "nominal", "sort": "-x" },
+        "x": { "field": "trade_pct_gdp", "type": "quantitative" },
+        "text": { "value": "← Malaysia" }
+      }
+    }
+  ]
+}
