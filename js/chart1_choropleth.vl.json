@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "World choropleth — merchandise exports as % of GDP. Malaysia highlighted in purple.",
+  "width": "container",
+  "height": 420,
+  "config": { "font": "Inter, Segoe UI, sans-serif" },
+  "layer": [
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/world-110m.json",
+        "format": { "type": "topojson", "feature": "countries" }
+      },
+      "transform": [
+        {
+          "lookup": "id",
+          "from": {
+            "data": { "url": "data/iso_numeric.csv" },
+            "key": "numeric",
+            "fields": ["alpha3"]
+          }
+        },
+        {
+          "lookup": "alpha3",
+          "from": {
+            "data": { "url": "data/choropleth_exports.csv" },
+            "key": "code",
+            "fields": ["exports_pct_gdp", "country"]
+          }
+        }
+      ],
+      "projection": { "type": "equalEarth" },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "strokeWidth": 0.4
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.alpha3 === 'MYS'",
+            "value": "#534AB7"
+          },
+          "field": "exports_pct_gdp",
+          "type": "quantitative",
+          "scale": { "scheme": "tealblues", "domain": [0, 150] },
+          "legend": {
+            "title": "Exports % of GDP",
+            "orient": "bottom-left",
+            "gradientLength": 120
+          }
+        },
+        "tooltip": [
+          { "field": "country", "type": "nominal", "title": "Country" },
+          { "field": "exports_pct_gdp", "type": "quantitative",
+            "format": ".1f", "title": "Exports % GDP" }
+        ]
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "text",
+        "text": "Malaysia →",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#534AB7",
+        "x": 733,
+        "y": 220
+      }
+    }
+  ]
+}
