@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Scatterplot: trade openness (exports % GDP) vs GDP per capita. Malaysia annotated as outlier.",
+  "width": "container",
+  "height": 320,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/trade_openness_gdp.csv" },
+  "layer": [
+    {
+      "mark": { "type": "point", "filled": true, "opacity": 0.55 },
+      "encoding": {
+        "x": {
+          "field": "gdp_per_capita",
+          "type": "quantitative",
+          "scale": { "type": "log" },
+          "axis": {
+            "title": "GDP per capita, PPP (log scale)",
+            "titleFontSize": 11,
+            "tickCount": 5,
+            "format": ",.0f"
+          }
+        },
+        "y": {
+          "field": "trade_pct_gdp",
+          "type": "quantitative",
+          "axis": {
+            "title": "Trade as % of GDP",
+            "titleFontSize": 11,
+            "grid": true,
+            "gridColor": "#f0ede8"
+          }
+        },
+        "color": {
+          "condition": { "test": "datum.highlight == 'True'", "value": "#534AB7" },
+          "value": "#B4B2A9"
+        },
+        "size": {
+          "condition": { "test": "datum.highlight == 'True'", "value": 120 },
+          "value": 40
+        },
+        "tooltip": [
+          { "field": "country", "type": "nominal", "title": "Country" },
+          { "field": "gdp_per_capita", "type": "quantitative",
+            "format": ",.0f", "title": "GDP per capita (PPP)" },
+          { "field": "trade_pct_gdp", "type": "quantitative",
+            "format": ".1f", "title": "Trade % of GDP" }
+        ]
+      }
+    },
+    {
+      "transform": [{ "filter": "datum.highlight == 'True'" }],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "dy": -4,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#534AB7"
+      },
+      "encoding": {
+        "x": { "field": "gdp_per_capita", "type": "quantitative",
+                "scale": { "type": "log" } },
+        "y": { "field": "trade_pct_gdp", "type": "quantitative" },
+        "text": { "value": "Malaysia" }
+      }
+    }
+  ]
+}
