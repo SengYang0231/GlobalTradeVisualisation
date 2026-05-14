@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Malaysia trade balance 1990-2023. Lollipop. Surplus=teal, Deficit=coral. Annotations pinned to top.",
+  "width": "container",
+  "height": 560,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/malaysia_trade_balance.csv" },
+  "layer": [
+    {
+      "mark": { "type": "rule", "strokeWidth": 2 },
+      "encoding": {
+        "y": {
+          "field": "year",
+          "type": "ordinal",
+          "sort": "descending",
+          "axis": {
+            "title": null,
+            "labelFontSize": 11,
+            "labelColor": {
+              "expr": "datum.value == 1997 || datum.value == 2008 || datum.value == 2020 ? '#BA7517' : '#333333'"
+            },
+            "labelFontWeight": {
+              "expr": "datum.value == 1997 || datum.value == 2008 || datum.value == 2020 ? 'bold' : 'normal'"
+            }
+          }
+        },
+        "x": {
+          "field": "balance_usd_bn",
+          "type": "quantitative",
+          "axis": {
+            "title": "Trade balance (USD billions)",
+            "titleFontSize": 11,
+            "grid": true,
+            "gridColor": "#f0ede8"
+          }
+        },
+        "x2": { "datum": 0 },
+        "color": {
+          "field": "direction",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Surplus", "Deficit"],
+            "range": ["#1D9E75", "#D85A30"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80,
+        "strokeWidth": 0
+      },
+      "encoding": {
+        "y": {
+          "field": "year",
+          "type": "ordinal",
+          "sort": "descending"
+        },
+        "x": {
+          "field": "balance_usd_bn",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "direction",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Surplus", "Deficit"],
+            "range": ["#1D9E75", "#D85A30"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom-right",
+            "labelFontSize": 11
+          }
+        },
+        "tooltip": [
+          { "field": "year", "type": "ordinal", "title": "Year" },
+          { "field": "balance_usd_bn", "type": "quantitative",
+            "format": ".2f", "title": "Balance (USD bn)" },
+          { "field": "direction", "type": "nominal", "title": "Status" },
+          { "field": "event", "type": "nominal", "title": "Event" }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 1,
+        "color": "#918980",
+        "strokeDash": [3, 2]
+      },
+      "encoding": { "x": { "datum": 0 } }
+    },
+    {
+      "data": {
+        "values": [
+          { "year": 1997, "label": "Asian Financial Crisis" },
+          { "year": 2008, "label": "Global Financial Crisis" },
+          { "year": 2020, "label": "COVID-19" }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 3],
+        "strokeWidth": 1.2,
+        "color": "#BA7517",
+        "opacity": 0.6
+      },
+      "encoding": {
+        "y": {
+          "field": "year",
+          "type": "ordinal",
+          "sort": "descending"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "year": 1997, "label": "Asian Financial Crisis" },
+          { "year": 2008, "label": "Global Financial Crisis" },
+          { "year": 2020, "label": "COVID-19" }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 4,
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "color": "#BA7517"
+      },
+      "encoding": {
+        "y": {
+          "field": "year",
+          "type": "ordinal",
+          "sort": "descending"
+        },
+        "x": { "datum": 0 },
+        "text": { "field": "label" }
+      }
+    }
+  ]
+}
