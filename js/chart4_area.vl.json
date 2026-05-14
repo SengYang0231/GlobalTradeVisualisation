@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Malaysia exports vs imports 1990-2023. Surplus gap shaded. Key events annotated.",
+  "width": "container",
+  "height": 340,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/malaysia_trade_timeseries.csv" },
+  "layer": [
+    {
+      "mark": { "type": "area", "opacity": 0.15, "line": false },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "axis": {
+            "title": null,
+            "tickCount": 7,
+            "format": "d",
+            "labelAngle": 0,
+            "labelFlush": true
+          }
+        },
+        "y": {
+          "field": "value_usd_bn",
+          "type": "quantitative",
+          "axis": {
+            "title": "Trade value (USD billions)",
+            "titleFontSize": 11,
+            "grid": true,
+            "gridColor": "#f0ede8"
+          }
+        },
+        "color": {
+          "field": "metric", "type": "nominal",
+          "scale": {
+            "domain": ["Exports", "Imports"],
+            "range": ["#1D9E75", "#D85A30"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": { "type": "line", "strokeWidth": 2.5 },
+      "encoding": {
+        "x": {
+          "field": "year", "type": "quantitative",
+          "axis": { "tickCount": 7, "format": "d", "labelAngle": 0 }
+        },
+        "y": { "field": "value_usd_bn", "type": "quantitative" },
+        "color": {
+          "field": "metric", "type": "nominal",
+          "scale": {
+            "domain": ["Exports", "Imports"],
+            "range": ["#1D9E75", "#D85A30"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top-left",
+            "labelFontSize": 12
+          }
+        },
+        "tooltip": [
+          { "field": "year", "type": "quantitative", "format": "d", "title": "Year" },
+          { "field": "metric", "type": "nominal", "title": "Metric" },
+          { "field": "value_usd_bn", "type": "quantitative",
+            "format": ".2f", "title": "USD billions" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "year": 1997, "label": "Asian\nFinancial Crisis" },
+          { "year": 2008, "label": "Global\nFinancial Crisis" },
+          { "year": 2020, "label": "COVID-19" }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 3],
+        "strokeWidth": 1.2,
+        "color": "#BA7517",
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": { "field": "year", "type": "quantitative" }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "year": 1997, "label": "Asian Financial Crisis" },
+          { "year": 2008, "label": "Global Financial Crisis" },
+          { "year": 2020, "label": "COVID-19" }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "dy": 10,
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "fontWeight": "normal",
+        "color": "#BA7517",
+        "y": 5
+      },
+      "encoding": {
+        "x": { "field": "year", "type": "quantitative" },
+        "text": { "field": "label" }
+      }
+    }
+  ]
+}
