@@ -64,7 +64,9 @@ df["imports"] = pd.to_numeric(df["imports"], errors="coerce")
 sections = df[df["section"] != "overall"].copy()
 sections["section"]       = sections["section"].astype(str).str.strip()
 sections["section_label"] = sections["section"].map(SITC_LABELS)
-sections["colour"]        = sections["section"].map(SITC_COLOURS)
+# Note: colour column intentionally NOT added — colour is declared in the
+# Vega-Lite spec directly. A 'colour' column in the CSV can interfere
+# with Vega-Lite's mark colour rendering.
 
 # Warn if any section codes are unmapped
 unmapped = sections[sections["section_label"].isna()]["section"].unique()
@@ -78,7 +80,7 @@ print(f"  SITC sections found: {sorted(sections['section'].unique())}")
 # ── Aggregate monthly → annual ────────────────────────────────────────────────
 annual = (
     sections
-    .groupby(["year", "section", "section_label", "colour"])[["exports", "imports"]]
+    .groupby(["year", "section", "section_label"])[["exports", "imports"]]
     .sum()
     .reset_index()
 )
@@ -104,7 +106,7 @@ print(f"\n  Annual rows after filter: {len(annual)} ({MIN_YEAR}–{MAX_YEAR})")
 print("\nBuilding malaysia_exports_by_sitc_annual.csv...")
 
 stacked = annual[
-    ["year", "section", "section_label", "colour",
+    ["year", "section", "section_label",
      "exports_rm_bil", "imports_rm_bil"]
 ].sort_values(["year", "section"]).reset_index(drop=True)
 
@@ -143,7 +145,7 @@ for yr in SNAPSHOT_YEARS:
     snap["snapshot_year"]  = yr
     slope_parts.append(
         snap[["snapshot_year", "section", "section_label",
-              "colour", "exports_rm_bil", "share_pct"]]
+              "exports_rm_bil", "share_pct"]]
     )
 
 slope = pd.concat(slope_parts).reset_index(drop=True)
