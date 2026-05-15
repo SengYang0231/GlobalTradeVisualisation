@@ -220,10 +220,23 @@ balance_df = balance_df.sort_values("balance_usd_bn", ascending=False)
 balance_df = balance_df.drop(columns=["exports_usd_thou", "imports_usd_thou",
                                        "balance_usd_thou", "total_trade"])
 
+# ── Region classification for Chart 8 East vs West grouping ──────────────────
+# East = Asia-Pacific (Malaysia's geographic neighbourhood)
+# West = Americas, Europe, Middle East & Africa
+EAST_PARTNERS = {
+    "China", "Singapore", "Japan", "Korea, Rep.", "Thailand",
+    "Vietnam", "Indonesia", "India", "Hong Kong, China",
+    "Philippines", "Other Asia, nes", "Taiwan", "Myanmar",
+    "Bangladesh", "Brunei Darussalam", "Cambodia", "Pakistan",
+}
+balance_df["region"] = balance_df["partner"].apply(
+    lambda p: "East" if p in EAST_PARTNERS else "West"
+)
+
 balance_df.to_csv(f"{OUTPUT_DIR}/malaysia_partner_balance.csv", index=False)
 print(f"  Saved {len(balance_df)} rows → {OUTPUT_DIR}/malaysia_partner_balance.csv")
-print(balance_df[["partner", "exports_usd_bn", "imports_usd_bn",
-                   "balance_usd_bn", "direction"]].to_string(index=False))
+print(balance_df[["partner", "region", "exports_usd_bn",
+                   "imports_usd_bn", "balance_usd_bn", "direction"]].to_string(index=False))
 
 print("\n✅ Dataset 3 complete.")
 print("   malaysia_arc_map.csv          → Chart 6")
