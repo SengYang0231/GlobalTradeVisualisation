@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Malaysia exports by SITC section 2000-2023. Stacked area chart.",
+  "width": "container",
+  "height": 360,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/malaysia_exports_by_sitc_annual.csv" },
+  "mark": { "type": "area", "opacity": 0.9 },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "labelAngle": 0,
+        "values": [2000, 2003, 2006, 2009, 2012, 2015, 2018, 2021, 2023]
+      }
+    },
+    "y": {
+      "field": "exports_rm_bil",
+      "type": "quantitative",
+      "stack": "zero",
+      "axis": {
+        "title": "Exports (RM billions)",
+        "titleFontSize": 11,
+        "grid": true,
+        "gridColor": "#f0ede8"
+      }
+    },
+    "color": {
+      "field": "section_label",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Machinery & Transport Equipment",
+          "Mineral Fuels & Petroleum",
+          "Misc. Manufactured Articles",
+          "Manufactured Goods",
+          "Chemicals",
+          "Animal & Vegetable Oils",
+          "Food & Live Animals",
+          "Crude Materials",
+          "Other Commodities",
+          "Beverages & Tobacco"
+        ],
+        "range": [
+          "#534AB7", "#D85A30", "#1D9E75", "#BA7517",
+          "#185FA5", "#9b59b6", "#B4B2A9", "#7f8c8d",
+          "#e67e22", "#2ecc71"
+        ]
+      },
+      "legend": {
+        "title": "Export category",
+        "orient": "right",
+        "labelFontSize": 11,
+        "labelLimit": 220
+      }
+    },
+    "tooltip": [
+      { "field": "year", "type": "ordinal", "title": "Year" },
+      { "field": "section_label", "type": "nominal", "title": "Category" },
+      { "field": "exports_rm_bil", "type": "quantitative",
+        "format": ".1f", "title": "Exports (RM bn)" }
+    ]
+  }
+}
