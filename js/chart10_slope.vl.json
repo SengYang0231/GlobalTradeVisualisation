@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Slope chart showing Malaysia export category share: 2000 vs 2013 vs 2023.",
+  "width": "container",
+  "height": 400,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/malaysia_export_mix_slope.csv" },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 1.8, "opacity": 0.75 },
+      "encoding": {
+        "x": {
+          "field": "snapshot_year", "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelFontSize": 13,
+            "labelFontWeight": "bold"
+          }
+        },
+        "y": {
+          "field": "share_pct", "type": "quantitative",
+          "axis": {
+            "title": "Share of total exports (%)",
+            "titleFontSize": 11,
+            "grid": true,
+            "gridColor": "#f0ede8"
+          }
+        },
+        "color": {
+          "field": "section_label", "type": "nominal",
+          "scale": {
+            "domain": [
+              "Machinery & Transport Equipment",
+              "Mineral Fuels & Petroleum",
+              "Misc. Manufactured Articles",
+              "Manufactured Goods",
+              "Chemicals",
+              "Animal & Vegetable Oils",
+              "Food & Live Animals",
+              "Crude Materials",
+              "Other Commodities",
+              "Beverages & Tobacco"
+            ],
+            "range": [
+              "#534AB7","#D85A30","#1D9E75","#BA7517",
+              "#185FA5","#9b59b6","#B4B2A9","#7f8c8d",
+              "#e67e22","#2ecc71"
+            ]
+          },
+          "legend": {
+            "title": "Export category",
+            "orient": "right",
+            "labelFontSize": 11,
+            "labelLimit": 200
+          }
+        },
+        "detail": { "field": "section_label", "type": "nominal" }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 60, "opacity": 0.9 },
+      "encoding": {
+        "x": { "field": "snapshot_year", "type": "ordinal" },
+        "y": { "field": "share_pct", "type": "quantitative" },
+        "color": { "field": "section_label", "type": "nominal", "legend": null }
+      }
+    },
+    {
+      "transform": [
+        { "filter": "datum.snapshot_year === 2023" },
+        { "filter": "datum.share_pct > 3" }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 10
+      },
+      "encoding": {
+        "x": { "field": "snapshot_year", "type": "ordinal" },
+        "y": { "field": "share_pct", "type": "quantitative" },
+        "text": { "field": "section_label", "type": "nominal" },
+        "color": { "field": "section_label", "type": "nominal", "legend": null }
+      }
+    }
+  ]
+}
