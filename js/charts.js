@@ -35,7 +35,7 @@ SPECS.forEach(({ id, file }) => {
     const el = document.getElementById(id);
     if (el) {
       el.innerHTML = `<p style="color:#D85A30;padding:16px;font-size:13px;">
-        ⚠️ Could not load ${file}: ${err.message}
+        Could not load ${file}: ${err.message}
       </p>`;
     }
   });
