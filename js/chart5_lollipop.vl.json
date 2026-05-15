@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Malaysia trade balance 1990-2023. Lollipop. Surplus=teal, Deficit=coral. Annotations pinned to top.",
+  "description": "Malaysia trade balance 1990-2023. Year on X, balance on Y. Surplus=teal, Deficit=coral.",
   "width": "container",
-  "height": 560,
+  "height": 280,
   "config": {
     "font": "Inter, Segoe UI, sans-serif",
     "view": { "stroke": null }
@@ -10,34 +10,40 @@
   "data": { "url": "data/malaysia_trade_balance.csv" },
   "layer": [
     {
-      "mark": { "type": "rule", "strokeWidth": 2 },
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 1,
+        "color": "#CCCCCC",
+        "strokeDash": [2, 2]
+      },
+      "encoding": { "y": { "datum": 0 } }
+    },
+    {
+      "mark": { "type": "rule", "strokeWidth": 3 },
       "encoding": {
-        "y": {
+        "x": {
           "field": "year",
-          "type": "ordinal",
-          "sort": "descending",
+          "type": "quantitative",
+          "scale": { "domain": [1990, 2023] },
           "axis": {
             "title": null,
-            "labelFontSize": 11,
-            "labelColor": {
-              "expr": "datum.value == 1997 || datum.value == 2008 || datum.value == 2020 ? '#BA7517' : '#333333'"
-            },
-            "labelFontWeight": {
-              "expr": "datum.value == 1997 || datum.value == 2008 || datum.value == 2020 ? 'bold' : 'normal'"
-            }
+            "tickCount": 7,
+            "format": "d",
+            "labelAngle": 0,
+            "labelFlush": true
           }
         },
-        "x": {
+        "y": {
           "field": "balance_usd_bn",
           "type": "quantitative",
           "axis": {
-            "title": "Trade balance (USD billions)",
+            "title": "Trade balance (USD bn)",
             "titleFontSize": 11,
             "grid": true,
             "gridColor": "#f0ede8"
           }
         },
-        "x2": { "datum": 0 },
+        "y2": { "datum": 0 },
         "color": {
           "field": "direction",
           "type": "nominal",
@@ -53,19 +59,12 @@
       "mark": {
         "type": "point",
         "filled": true,
-        "size": 80,
+        "size": 55,
         "strokeWidth": 0
       },
       "encoding": {
-        "y": {
-          "field": "year",
-          "type": "ordinal",
-          "sort": "descending"
-        },
-        "x": {
-          "field": "balance_usd_bn",
-          "type": "quantitative"
-        },
+        "x": { "field": "year", "type": "quantitative" },
+        "y": { "field": "balance_usd_bn", "type": "quantitative" },
         "color": {
           "field": "direction",
           "type": "nominal",
@@ -75,33 +74,24 @@
           },
           "legend": {
             "title": null,
-            "orient": "bottom-right",
+            "orient": "top-left",
             "labelFontSize": 11
           }
         },
         "tooltip": [
-          { "field": "year", "type": "ordinal", "title": "Year" },
+          { "field": "year", "type": "quantitative",
+            "format": "d", "title": "Year" },
           { "field": "balance_usd_bn", "type": "quantitative",
             "format": ".2f", "title": "Balance (USD bn)" },
-          { "field": "direction", "type": "nominal", "title": "Status" },
-          { "field": "event", "type": "nominal", "title": "Event" }
+          { "field": "direction", "type": "nominal", "title": "Status" }
         ]
       }
     },
     {
-      "mark": {
-        "type": "rule",
-        "strokeWidth": 1,
-        "color": "#918980",
-        "strokeDash": [3, 2]
-      },
-      "encoding": { "x": { "datum": 0 } }
-    },
-    {
       "data": {
         "values": [
-          { "year": 1997, "label": "Asian Financial Crisis" },
-          { "year": 2008, "label": "Global Financial Crisis" },
+          { "year": 1997, "label": "1997 Crisis" },
+          { "year": 2008, "label": "2008 GFC" },
           { "year": 2020, "label": "COVID-19" }
         ]
       },
@@ -110,40 +100,31 @@
         "strokeDash": [4, 3],
         "strokeWidth": 1.2,
         "color": "#BA7517",
-        "opacity": 0.6
+        "opacity": 0.7
       },
       "encoding": {
-        "y": {
-          "field": "year",
-          "type": "ordinal",
-          "sort": "descending"
-        }
+        "x": { "field": "year", "type": "quantitative" }
       }
     },
     {
       "data": {
         "values": [
-          { "year": 1997, "label": "Asian Financial Crisis" },
-          { "year": 2008, "label": "Global Financial Crisis" },
+          { "year": 1997, "label": "1997 Crisis" },
+          { "year": 2008, "label": "2008 GFC" },
           { "year": 2020, "label": "COVID-19" }
         ]
       },
       "mark": {
         "type": "text",
         "align": "left",
-        "baseline": "middle",
         "dx": 4,
         "fontSize": 10,
         "fontStyle": "italic",
-        "color": "#BA7517"
+        "color": "#BA7517",
+        "y": 8
       },
       "encoding": {
-        "y": {
-          "field": "year",
-          "type": "ordinal",
-          "sort": "descending"
-        },
-        "x": { "datum": 0 },
+        "x": { "field": "year", "type": "quantitative" },
         "text": { "field": "label" }
       }
     }
