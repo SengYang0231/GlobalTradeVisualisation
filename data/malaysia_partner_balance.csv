@@ -1,21 +1,21 @@
-partner,exports_usd_bn,imports_usd_bn,balance_usd_bn,direction,year
-Singapore,48.09,31.53,16.56,Surplus,2023
-"Hong Kong, China",19.7,3.34,16.36,Surplus,2023
-United States,35.46,19.53,15.93,Surplus,2023
-Netherlands,7.86,1.12,6.74,Surplus,2023
-Vietnam,11.4,6.01,5.39,Surplus,2023
-Philippines,5.8,2.12,3.68,Surplus,2023
-India,9.98,6.54,3.44,Surplus,2023
-Mexico,4.1,0.67,3.43,Surplus,2023
-Australia,10.94,7.62,3.33,Surplus,2023
-Japan,18.79,15.56,3.24,Surplus,2023
-Turkey,3.84,0.61,3.23,Surplus,2023
-Thailand,12.87,11.94,0.93,Surplus,2023
-"Korea, Rep.",12.25,12.1,0.16,Surplus,2023
-Germany,6.7,7.21,-0.51,Deficit,2023
-Indonesia,11.16,13.22,-2.06,Deficit,2023
-United Arab Emirates,3.12,5.57,-2.45,Deficit,2023
-Saudi Arabia,1.5,9.57,-8.07,Deficit,2023
-"Other Asia, nes",9.49,18.37,-8.88,Deficit,2023
-"Middle East, North Africa, Afghanistan & Pakistan",9.42,18.68,-9.26,Deficit,2023
-China,42.15,56.71,-14.56,Deficit,2023
+partner,exports_usd_bn,imports_usd_bn,balance_usd_bn,direction,year,region
+Singapore,48.09,31.53,16.56,Surplus,2023,East
+"Hong Kong, China",19.7,3.34,16.36,Surplus,2023,East
+United States,35.46,19.53,15.93,Surplus,2023,West
+Netherlands,7.86,1.12,6.74,Surplus,2023,West
+Vietnam,11.4,6.01,5.39,Surplus,2023,East
+Philippines,5.8,2.12,3.68,Surplus,2023,East
+India,9.98,6.54,3.44,Surplus,2023,East
+Mexico,4.1,0.67,3.43,Surplus,2023,West
+Australia,10.94,7.62,3.33,Surplus,2023,West
+Japan,18.79,15.56,3.24,Surplus,2023,East
+Turkey,3.84,0.61,3.23,Surplus,2023,West
+Thailand,12.87,11.94,0.93,Surplus,2023,East
+"Korea, Rep.",12.25,12.1,0.16,Surplus,2023,East
+Germany,6.7,7.21,-0.51,Deficit,2023,West
+Indonesia,11.16,13.22,-2.06,Deficit,2023,East
+United Arab Emirates,3.12,5.57,-2.45,Deficit,2023,West
+Saudi Arabia,1.5,9.57,-8.07,Deficit,2023,West
+"Other Asia, nes",9.49,18.37,-8.88,Deficit,2023,East
+"Middle East, North Africa, Afghanistan & Pakistan",9.42,18.68,-9.26,Deficit,2023,West
+China,42.15,56.71,-14.56,Deficit,2023,East
