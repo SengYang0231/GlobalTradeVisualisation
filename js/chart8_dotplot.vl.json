@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Malaysia bilateral trade balance by partner. Surplus=teal right, Deficit=coral left.",
+  "width": "container",
+  "height": 360,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/malaysia_partner_balance.csv" },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule", "strokeWidth": 1,
+        "color": "#918980", "strokeDash": [3, 2]
+      },
+      "encoding": { "x": { "datum": 0 } }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 90 },
+      "encoding": {
+        "y": {
+          "field": "partner", "type": "nominal",
+          "sort": { "field": "balance_usd_bn", "order": "descending" },
+          "axis": { "title": null, "labelFontSize": 11, "labelLimit": 130 }
+        },
+        "x": {
+          "field": "balance_usd_bn", "type": "quantitative",
+          "axis": {
+            "title": "Bilateral balance (USD billions)",
+            "titleFontSize": 11,
+            "grid": true,
+            "gridColor": "#f0ede8"
+          }
+        },
+        "color": {
+          "field": "direction", "type": "nominal",
+          "scale": {
+            "domain": ["Surplus", "Deficit"],
+            "range": ["#1D9E75", "#D85A30"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom-right",
+            "labelFontSize": 11
+          }
+        },
+        "tooltip": [
+          { "field": "partner", "type": "nominal", "title": "Partner" },
+          { "field": "exports_usd_bn", "type": "quantitative",
+            "format": ".2f", "title": "Exports (USD bn)" },
+          { "field": "imports_usd_bn", "type": "quantitative",
+            "format": ".2f", "title": "Imports (USD bn)" },
+          { "field": "balance_usd_bn", "type": "quantitative",
+            "format": ".2f", "title": "Balance (USD bn)" }
+        ]
+      }
+    }
+  ]
+}
