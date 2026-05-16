@@ -1,0 +1,12 @@
+partner,exports_usd_bn,imports_usd_bn,balance_usd_bn,direction,year,region
+Singapore,48.09,31.53,16.56,Surplus,2023,East
+"Hong Kong, China",19.7,3.34,16.36,Surplus,2023,East
+Vietnam,11.4,6.01,5.39,Surplus,2023,East
+Philippines,5.8,2.12,3.68,Surplus,2023,East
+India,9.98,6.54,3.44,Surplus,2023,East
+Japan,18.79,15.56,3.24,Surplus,2023,East
+Thailand,12.87,11.94,0.93,Surplus,2023,East
+"Korea, Rep.",12.25,12.1,0.16,Surplus,2023,East
+Indonesia,11.16,13.22,-2.06,Deficit,2023,East
+"Other Asia, nes",9.49,18.37,-8.88,Deficit,2023,East
+China,42.15,56.71,-14.56,Deficit,2023,East

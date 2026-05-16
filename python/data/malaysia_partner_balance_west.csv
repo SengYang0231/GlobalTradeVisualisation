@@ -1,0 +1,10 @@
+partner,exports_usd_bn,imports_usd_bn,balance_usd_bn,direction,year,region
+United States,35.46,19.53,15.93,Surplus,2023,West
+Netherlands,7.86,1.12,6.74,Surplus,2023,West
+Mexico,4.1,0.67,3.43,Surplus,2023,West
+Australia,10.94,7.62,3.33,Surplus,2023,West
+Turkey,3.84,0.61,3.23,Surplus,2023,West
+Germany,6.7,7.21,-0.51,Deficit,2023,West
+United Arab Emirates,3.12,5.57,-2.45,Deficit,2023,West
+Saudi Arabia,1.5,9.57,-8.07,Deficit,2023,West
+"Middle East, North Africa, Afghanistan & Pakistan",9.42,18.68,-9.26,Deficit,2023,West
