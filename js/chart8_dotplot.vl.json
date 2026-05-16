@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Malaysia bilateral trade balance by partner. Surplus=teal right, Deficit=coral left.",
+  "description": "Malaysia bilateral trade balance — East then West partners sorted by region then balance.",
   "width": "container",
-  "height": 360,
+  "height": { "step": 26 },
   "config": {
     "font": "Inter, Segoe UI, sans-serif",
     "view": { "stroke": null }
@@ -14,18 +14,20 @@
         "type": "rule", "strokeWidth": 1,
         "color": "#918980", "strokeDash": [3, 2]
       },
-      "encoding": { "x": { "datum": 0 } }
+      "encoding": { "x": { "datum": 0, "type": "quantitative" } }
     },
     {
-      "mark": { "type": "point", "filled": true, "size": 90 },
+      "mark": { "type": "rule", "strokeWidth": 2.5 },
       "encoding": {
         "y": {
-          "field": "partner", "type": "nominal",
-          "sort": { "field": "balance_usd_bn", "order": "descending" },
-          "axis": { "title": null, "labelFontSize": 11, "labelLimit": 130 }
+          "field": "partner",
+          "type": "nominal",
+          "sort": { "field": "sort_order", "order": "ascending" },
+          "axis": { "title": null, "labelFontSize": 11, "labelLimit": 230 }
         },
         "x": {
-          "field": "balance_usd_bn", "type": "quantitative",
+          "field": "balance_usd_bn",
+          "type": "quantitative",
           "axis": {
             "title": "Bilateral balance (USD billions)",
             "titleFontSize": 11,
@@ -33,8 +35,30 @@
             "gridColor": "#f0ede8"
           }
         },
+        "x2": { "datum": 0, "type": "quantitative" },
         "color": {
-          "field": "direction", "type": "nominal",
+          "field": "direction",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Surplus", "Deficit"],
+            "range": ["#1D9E75", "#D85A30"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 90, "strokeWidth": 0 },
+      "encoding": {
+        "y": {
+          "field": "partner",
+          "type": "nominal",
+          "sort": { "field": "sort_order", "order": "ascending" }
+        },
+        "x": { "field": "balance_usd_bn", "type": "quantitative" },
+        "color": {
+          "field": "direction",
+          "type": "nominal",
           "scale": {
             "domain": ["Surplus", "Deficit"],
             "range": ["#1D9E75", "#D85A30"]
@@ -46,14 +70,34 @@
           }
         },
         "tooltip": [
-          { "field": "partner", "type": "nominal", "title": "Partner" },
-          { "field": "exports_usd_bn", "type": "quantitative",
-            "format": ".2f", "title": "Exports (USD bn)" },
-          { "field": "imports_usd_bn", "type": "quantitative",
-            "format": ".2f", "title": "Imports (USD bn)" },
-          { "field": "balance_usd_bn", "type": "quantitative",
-            "format": ".2f", "title": "Balance (USD bn)" }
+          { "field": "partner",        "type": "nominal",      "title": "Partner" },
+          { "field": "region",         "type": "nominal",      "title": "Region" },
+          { "field": "exports_usd_bn", "type": "quantitative", "format": ".2f", "title": "Exports (USD bn)" },
+          { "field": "imports_usd_bn", "type": "quantitative", "format": ".2f", "title": "Imports (USD bn)" },
+          { "field": "balance_usd_bn", "type": "quantitative", "format": ".2f", "title": "Balance (USD bn)" }
         ]
+      }
+    },
+    {
+      "transform": [
+        { "filter": "datum.partner === 'China' || datum.partner === 'United States'" }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 9.5,
+        "fontStyle": "italic",
+        "color": "#BA7517"
+      },
+      "encoding": {
+        "y": {
+          "field": "partner",
+          "type": "nominal",
+          "sort": { "field": "sort_order", "order": "ascending" }
+        },
+        "x": { "field": "balance_usd_bn", "type": "quantitative" },
+        "text": { "field": "direction", "type": "nominal" }
       }
     }
   ]
