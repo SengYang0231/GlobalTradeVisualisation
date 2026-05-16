@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Bump chart — Malaysia top trading partner ranks over time. Ranks relative to tracked group.",
+  "width": "container",
+  "height": 360,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/malaysia_partner_ranks.csv" },
+  "transform": [
+    { "filter": "datum.rank <= 8" }
+  ],
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 2.5, "opacity": 0.85 },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": { "title": null, "labelAngle": 0, "labelFontSize": 11 }
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": { "reverse": true, "domain": [1, 8], "clamp": true },
+          "axis": {
+            "title": "Rank",
+            "titleFontSize": 11,
+            "grid": true,
+            "gridColor": "#f0ede8",
+            "values": [1, 2, 3, 4, 5, 6, 7, 8]
+          }
+        },
+        "color": {
+          "field": "partner",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Singapore", "China", "United States",
+              "Hong Kong, China", "Japan", "Thailand",
+              "Korea, Rep.", "Vietnam"
+            ],
+            "range": [
+              "#534AB7", "#D85A30", "#1D9E75", "#BA7517",
+              "#185FA5", "#9b59b6", "#7f8c8d", "#e67e22"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "right",
+            "labelFontSize": 11
+          }
+        },
+        "detail": { "field": "partner", "type": "nominal" }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 80, "strokeWidth": 0 },
+      "encoding": {
+        "x": { "field": "year", "type": "ordinal" },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": { "reverse": true, "domain": [1, 8], "clamp": true }
+        },
+        "color": { "field": "partner", "type": "nominal", "legend": null },
+        "tooltip": [
+          { "field": "year",           "type": "ordinal",      "title": "Year" },
+          { "field": "partner",        "type": "nominal",      "title": "Partner" },
+          { "field": "rank",           "type": "quantitative", "title": "Rank" },
+          { "field": "exports_usd_bn", "type": "quantitative",
+            "format": ".2f",           "title": "Exports (USD bn)" }
+        ]
+      }
+    },
+    {
+      "transform": [ { "filter": "datum.year === 2023" } ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 10
+      },
+      "encoding": {
+        "x": { "field": "year", "type": "ordinal" },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": { "reverse": true, "domain": [1, 8], "clamp": true }
+        },
+        "text":  { "field": "partner", "type": "nominal" },
+        "color": { "field": "partner", "type": "nominal", "legend": null }
+      }
+    }
+  ]
+}
