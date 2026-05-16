@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Treemap — Malaysia export composition. Pre-computed squarify layout. Pure Vega-Lite rect + text.",
+  "description": "Treemap — Malaysia export composition. y coords pre-flipped in Python. Pure Vega-Lite rect + text.",
   "width": "container",
   "height": 400,
   "config": {
@@ -45,22 +45,39 @@
       }
     },
     {
-      "transform": [
-        { "filter": "datum.w > 55 && datum.h > 18" },
-        { "calculate": "400 - datum.cy", "as": "cy_vl" }
-      ],
+      "transform": [ { "filter": "datum.w >= 55 && datum.h >= 18" } ],
       "mark": {
         "type": "text",
         "baseline": "middle",
         "align": "center",
-        "fontSize": 9.5,
+        "fontSize": 9,
+        "fontWeight": "normal",
         "color": "#ffffff",
-        "limit": 120,
-        "ellipsis": "…"
+        "opacity": 1,
+        "limit": 100
       },
       "encoding": {
-        "x": { "field": "cx",    "type": "quantitative", "scale": { "domain": [0, 500] }, "axis": null },
-        "y": { "field": "cy_vl", "type": "quantitative", "scale": { "domain": [0, 400] }, "axis": null },
+        "x":  { "field": "cx", "type": "quantitative", "scale": { "domain": [0, 500] }, "axis": null },
+        "y":  { "field": "cy", "type": "quantitative", "scale": { "domain": [0, 400] }, "axis": null },
+        "text": { "field": "sub_sector", "type": "nominal" }
+      }
+    },
+    {
+      "transform": [ { "filter": "datum.w >= 120 && datum.h >= 30" } ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "center",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#ffffff",
+        "opacity": 1,
+        "limit": 160,
+        "dy": 12
+      },
+      "encoding": {
+        "x":  { "field": "cx", "type": "quantitative", "scale": { "domain": [0, 500] }, "axis": null },
+        "y":  { "field": "cy", "type": "quantitative", "scale": { "domain": [0, 400] }, "axis": null },
         "text": { "field": "sub_sector", "type": "nominal" }
       }
     }
