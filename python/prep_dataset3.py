@@ -165,17 +165,17 @@ rank_records = []
 for year in BUMP_YEARS:
     if year not in exp_df.columns:
         continue
+
+    # Filter to tracked partners only FIRST, then rank within that group
+    # This gives a clean relative ranking among the selected partners
     year_data = (
-        exp_df[["partner", year]]
+        exp_df[exp_df["partner"].isin(top_partners)][["partner", year]]
         .dropna()
         .sort_values(year, ascending=False)
         .reset_index(drop=True)
     )
-    year_data["rank"] = year_data.index + 1
+    year_data["rank"] = year_data.index + 1   # rank 1–8 within group
     year_data["year"] = year
-
-    # Keep only our tracked top partners
-    year_data = year_data[year_data["partner"].isin(top_partners)]
     year_data = year_data.rename(columns={year: "exports_usd_thou"})
     year_data["exports_usd_bn"] = (year_data["exports_usd_thou"] / 1_000_000).round(2)
     rank_records.append(year_data[["year", "partner", "rank", "exports_usd_bn"]])
@@ -242,3 +242,15 @@ print("\n✅ Dataset 3 complete.")
 print("   malaysia_arc_map.csv          → Chart 6")
 print("   malaysia_partner_ranks.csv    → Chart 7")
 print("   malaysia_partner_balance.csv  → Chart 8")
+
+# ── Split East/West CSVs for Chart 8 vconcat ─────────────────────────────────
+east_df = (balance_df[balance_df["region"] == "East"]
+           .sort_values("balance_usd_bn", ascending=False)
+           .reset_index(drop=True))
+west_df = (balance_df[balance_df["region"] == "West"]
+           .sort_values("balance_usd_bn", ascending=False)
+           .reset_index(drop=True))
+east_df.to_csv(f"{OUTPUT_DIR}/malaysia_partner_balance_east.csv", index=False)
+west_df.to_csv(f"{OUTPUT_DIR}/malaysia_partner_balance_west.csv", index=False)
+print(f"   malaysia_partner_balance_east.csv  ({len(east_df)} rows)")
+print(f"   malaysia_partner_balance_west.csv  ({len(west_df)} rows)")
