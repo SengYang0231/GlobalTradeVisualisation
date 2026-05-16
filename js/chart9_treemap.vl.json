@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Treemap — Malaysia export composition. Pre-computed squarify layout. Pure Vega-Lite rect + text.",
+  "width": "container",
+  "height": 400,
+  "config": {
+    "font": "Inter, Segoe UI, sans-serif",
+    "view": { "stroke": null }
+  },
+  "data": { "url": "data/malaysia_treemap_coords.csv" },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#ffffff",
+        "strokeWidth": 1.5,
+        "opacity": 0.85
+      },
+      "encoding": {
+        "x":  { "field": "x0", "type": "quantitative", "scale": { "domain": [0, 500] }, "axis": null },
+        "x2": { "field": "x1", "type": "quantitative" },
+        "y":  { "field": "y0", "type": "quantitative", "scale": { "domain": [0, 400] }, "axis": null },
+        "y2": { "field": "y1", "type": "quantitative" },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Manufacturing", "Energy & Mining", "Agriculture & Food"],
+            "range":  ["#534AB7",       "#D85A30",         "#1D9E75"]
+          },
+          "legend": {
+            "title": "Sector",
+            "orient": "bottom",
+            "labelFontSize": 11,
+            "symbolSize": 120
+          }
+        },
+        "tooltip": [
+          { "field": "sub_sector",          "type": "nominal",      "title": "Product" },
+          { "field": "sector",              "type": "nominal",      "title": "Sector" },
+          { "field": "value_rm_mil",        "type": "quantitative", "format": ",.1f", "title": "Value (RM mil)" },
+          { "field": "share_total_pct",     "type": "quantitative", "format": ".1f",  "title": "Share of exports (%)" },
+          { "field": "share_in_sector_pct", "type": "quantitative", "format": ".1f",  "title": "Share within sector (%)" }
+        ]
+      }
+    },
+    {
+      "transform": [
+        { "filter": "datum.w > 55 && datum.h > 18" },
+        { "calculate": "400 - datum.cy", "as": "cy_vl" }
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "center",
+        "fontSize": 9.5,
+        "color": "#ffffff",
+        "limit": 120,
+        "ellipsis": "…"
+      },
+      "encoding": {
+        "x": { "field": "cx",    "type": "quantitative", "scale": { "domain": [0, 500] }, "axis": null },
+        "y": { "field": "cy_vl", "type": "quantitative", "scale": { "domain": [0, 400] }, "axis": null },
+        "text": { "field": "sub_sector", "type": "nominal" }
+      }
+    }
+  ]
+}
