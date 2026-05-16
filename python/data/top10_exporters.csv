@@ -1,0 +1,12 @@
+country,code,year,trade_pct_gdp,gdp_per_capita,highlight
+Hong Kong,HKG,2022,384.88113,64036.645,False
+Slovakia,SVK,2022,204.05632,38664.906,False
+Belgium,BEL,2022,191.17903,62561.78,False
+Slovenia,SVN,2022,186.64708,47050.066,False
+United Arab Emirates,ARE,2022,185.74165,70075.63,False
+Hungary,HUN,2022,185.0002,40610.973,False
+Netherlands,NLD,2022,184.10748,71324.04,False
+Vietnam,VNM,2022,183.15363,12979.764,False
+Estonia,EST,2022,175.68712,43128.633,False
+Lithuania,LTU,2022,175.65161,46651.215,False
+Malaysia,MYS,2022,146.4246,32129.223,True
