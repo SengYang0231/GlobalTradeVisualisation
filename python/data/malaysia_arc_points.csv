@@ -1,0 +1,794 @@
+partner,arc_id,step,lon,lat,trade_type,stroke_width,exports_usd_bn,imports_usd_bn,balance_usd_bn
+Singapore,Singapore,0,109.45,4.21,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,1,109.3562,4.4246,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,2,109.2623,4.6302,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,3,109.1685,4.827,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,4,109.0747,5.0149,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,5,108.9808,5.1939,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,6,108.887,5.364,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,7,108.7932,5.5252,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,8,108.6993,5.6776,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,9,108.6055,5.821,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,10,108.5117,5.9556,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,11,108.4178,6.0812,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,12,108.324,6.198,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,13,108.2302,6.3059,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,14,108.1363,6.4049,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,15,108.0425,6.495,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,16,107.9487,6.5762,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,17,107.8548,6.6486,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,18,107.761,6.712,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,19,107.6672,6.7666,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,20,107.5733,6.8122,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,21,107.4795,6.849,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,22,107.3857,6.8769,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,23,107.2918,6.8959,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,24,107.198,6.906,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,25,107.1042,6.9072,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,26,107.0103,6.8996,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,27,106.9165,6.883,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,28,106.8227,6.8576,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,29,106.7288,6.8232,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,30,106.635,6.78,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,31,106.5412,6.7279,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,32,106.4473,6.6669,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,33,106.3535,6.597,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,34,106.2597,6.5182,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,35,106.1658,6.4306,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,36,106.072,6.334,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,37,105.9782,6.2286,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,38,105.8843,6.1142,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,39,105.7905,5.991,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,40,105.6967,5.8589,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,41,105.6028,5.7179,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,42,105.509,5.568,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,43,105.4152,5.4092,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,44,105.3213,5.2416,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,45,105.2275,5.065,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,46,105.1337,4.8796,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,47,105.0398,4.6852,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,48,104.946,4.482,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,49,104.8522,4.2699,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,50,104.7583,4.0489,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,51,104.6645,3.819,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,52,104.5707,3.5802,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,53,104.4768,3.3326,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,54,104.383,3.076,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,55,104.2892,2.8106,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,56,104.1953,2.5362,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,57,104.1015,2.253,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,58,104.0077,1.9609,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,59,103.9138,1.6599,Export-heavy,10.0,48.09,31.53,16.56
+Singapore,Singapore,60,103.82,1.35,Export-heavy,10.0,48.09,31.53,16.56
+China,China,0,109.45,4.21,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,1,109.3623,4.9997,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,2,109.2747,5.7806,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,3,109.187,6.5525,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,4,109.0993,7.3156,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,5,109.0117,8.0697,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,6,108.924,8.815,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,7,108.8363,9.5514,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,8,108.7487,10.2789,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,9,108.661,10.9975,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,10,108.5733,11.7072,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,11,108.4857,12.4081,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,12,108.398,13.1,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,13,108.3103,13.7831,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,14,108.2227,14.4572,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,15,108.135,15.1225,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,16,108.0473,15.7789,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,17,107.9597,16.4264,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,18,107.872,17.065,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,19,107.7843,17.6947,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,20,107.6967,18.3156,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,21,107.609,18.9275,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,22,107.5213,19.5306,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,23,107.4337,20.1247,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,24,107.346,20.71,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,25,107.2583,21.2864,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,26,107.1707,21.8539,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,27,107.083,22.4125,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,28,106.9953,22.9622,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,29,106.9077,23.5031,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,30,106.82,24.035,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,31,106.7323,24.5581,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,32,106.6447,25.0722,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,33,106.557,25.5775,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,34,106.4693,26.0739,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,35,106.3817,26.5614,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,36,106.294,27.04,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,37,106.2063,27.5097,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,38,106.1187,27.9706,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,39,106.031,28.4225,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,40,105.9433,28.8656,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,41,105.8557,29.2997,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,42,105.768,29.725,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,43,105.6803,30.1414,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,44,105.5927,30.5489,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,45,105.505,30.9475,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,46,105.4173,31.3372,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,47,105.3297,31.7181,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,48,105.242,32.09,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,49,105.1543,32.4531,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,50,105.0667,32.8072,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,51,104.979,33.1525,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,52,104.8913,33.4889,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,53,104.8037,33.8164,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,54,104.716,34.135,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,55,104.6283,34.4447,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,56,104.5407,34.7456,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,57,104.453,35.0375,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,58,104.3653,35.3206,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,59,104.2777,35.5947,Import-heavy,8.78,42.15,56.71,-14.56
+China,China,60,104.19,35.86,Import-heavy,8.78,42.15,56.71,-14.56
+United States,United States,0,109.45,4.21,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,1,106.0307,5.7413,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,2,102.6113,7.2393,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,3,99.192,8.704,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,4,95.7727,10.1353,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,5,92.3533,11.5333,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,6,88.934,12.898,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,7,85.5147,14.2293,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,8,82.0953,15.5273,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,9,78.676,16.792,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,10,75.2567,18.0233,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,11,71.8373,19.2213,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,12,68.418,20.386,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,13,64.9987,21.5173,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,14,61.5793,22.6153,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,15,58.16,23.68,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,16,54.7407,24.7113,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,17,51.3213,25.7093,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,18,47.902,26.674,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,19,44.4827,27.6053,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,20,41.0633,28.5033,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,21,37.644,29.368,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,22,34.2247,30.1993,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,23,30.8053,30.9973,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,24,27.386,31.762,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,25,23.9667,32.4933,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,26,20.5473,33.1913,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,27,17.128,33.856,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,28,13.7087,34.4873,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,29,10.2893,35.0853,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,30,6.87,35.65,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,31,3.4507,36.1813,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,32,0.0313,36.6793,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,33,-3.388,37.144,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,34,-6.8073,37.5753,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,35,-10.2267,37.9733,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,36,-13.646,38.338,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,37,-17.0653,38.6693,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,38,-20.4847,38.9673,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,39,-23.904,39.232,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,40,-27.3233,39.4633,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,41,-30.7427,39.6613,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,42,-34.162,39.826,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,43,-37.5813,39.9573,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,44,-41.0007,40.0553,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,45,-44.42,40.12,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,46,-47.8393,40.1513,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,47,-51.2587,40.1493,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,48,-54.678,40.114,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,49,-58.0973,40.0453,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,50,-61.5167,39.9433,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,51,-64.936,39.808,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,52,-68.3553,39.6393,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,53,-71.7747,39.4373,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,54,-75.194,39.202,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,55,-78.6133,38.9333,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,56,-82.0327,38.6313,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,57,-85.452,38.296,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,58,-88.8713,37.9273,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,59,-92.2907,37.5253,Export-heavy,7.41,35.46,19.53,15.93
+United States,United States,60,-95.71,37.09,Export-heavy,7.41,35.46,19.53,15.93
+"Hong Kong, China","Hong Kong, China",0,109.45,4.21,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",1,109.5277,4.7754,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",2,109.6053,5.3319,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",3,109.683,5.8795,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",4,109.7607,6.4182,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",5,109.8383,6.9481,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",6,109.916,7.469,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",7,109.9937,7.9811,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",8,110.0713,8.4842,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",9,110.149,8.9785,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",10,110.2267,9.4639,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",11,110.3043,9.9404,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",12,110.382,10.408,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",13,110.4597,10.8667,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",14,110.5373,11.3166,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",15,110.615,11.7575,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",16,110.6927,12.1896,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",17,110.7703,12.6127,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",18,110.848,13.027,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",19,110.9257,13.4324,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",20,111.0033,13.8289,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",21,111.081,14.2165,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",22,111.1587,14.5952,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",23,111.2363,14.9651,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",24,111.314,15.326,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",25,111.3917,15.6781,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",26,111.4693,16.0212,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",27,111.547,16.3555,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",28,111.6247,16.6809,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",29,111.7023,16.9974,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",30,111.78,17.305,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",31,111.8577,17.6037,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",32,111.9353,17.8936,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",33,112.013,18.1745,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",34,112.0907,18.4466,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",35,112.1683,18.7097,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",36,112.246,18.964,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",37,112.3237,19.2094,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",38,112.4013,19.4459,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",39,112.479,19.6735,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",40,112.5567,19.8922,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",41,112.6343,20.1021,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",42,112.712,20.303,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",43,112.7897,20.4951,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",44,112.8673,20.6782,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",45,112.945,20.8525,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",46,113.0227,21.0179,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",47,113.1003,21.1744,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",48,113.178,21.322,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",49,113.2557,21.4607,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",50,113.3333,21.5906,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",51,113.411,21.7115,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",52,113.4887,21.8236,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",53,113.5663,21.9267,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",54,113.644,22.021,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",55,113.7217,22.1064,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",56,113.7993,22.1829,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",57,113.877,22.2505,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",58,113.9547,22.3092,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",59,114.0323,22.3591,Export-heavy,4.17,19.7,3.34,16.36
+"Hong Kong, China","Hong Kong, China",60,114.11,22.4,Export-heavy,4.17,19.7,3.34,16.36
+Japan,Japan,0,109.45,4.21,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,1,109.93,5.0054,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,2,110.41,5.7919,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,3,110.89,6.5695,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,4,111.37,7.3382,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,5,111.85,8.0981,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,6,112.33,8.849,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,7,112.81,9.5911,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,8,113.29,10.3242,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,9,113.77,11.0485,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,10,114.25,11.7639,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,11,114.73,12.4704,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,12,115.21,13.168,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,13,115.69,13.8567,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,14,116.17,14.5366,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,15,116.65,15.2075,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,16,117.13,15.8696,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,17,117.61,16.5227,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,18,118.09,17.167,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,19,118.57,17.8024,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,20,119.05,18.4289,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,21,119.53,19.0465,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,22,120.01,19.6552,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,23,120.49,20.2551,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,24,120.97,20.846,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,25,121.45,21.4281,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,26,121.93,22.0012,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,27,122.41,22.5655,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,28,122.89,23.1209,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,29,123.37,23.6674,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,30,123.85,24.205,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,31,124.33,24.7337,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,32,124.81,25.2536,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,33,125.29,25.7645,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,34,125.77,26.2666,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,35,126.25,26.7597,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,36,126.73,27.244,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,37,127.21,27.7194,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,38,127.69,28.1859,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,39,128.17,28.6435,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,40,128.65,29.0922,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,41,129.13,29.5321,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,42,129.61,29.963,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,43,130.09,30.3851,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,44,130.57,30.7982,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,45,131.05,31.2025,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,46,131.53,31.5979,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,47,132.01,31.9844,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,48,132.49,32.362,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,49,132.97,32.7307,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,50,133.45,33.0906,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,51,133.93,33.4415,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,52,134.41,33.7836,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,53,134.89,34.1167,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,54,135.37,34.441,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,55,135.85,34.7564,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,56,136.33,35.0629,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,57,136.81,35.3605,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,58,137.29,35.6492,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,59,137.77,35.9291,Export-heavy,3.98,18.79,15.56,3.24
+Japan,Japan,60,138.25,36.2,Export-heavy,3.98,18.79,15.56,3.24
+Thailand,Thailand,0,109.45,4.21,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,1,109.309,4.6666,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,2,109.168,5.1142,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,3,109.027,5.553,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,4,108.886,5.9829,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,5,108.745,6.4039,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,6,108.604,6.816,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,7,108.463,7.2192,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,8,108.322,7.6136,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,9,108.181,7.999,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,10,108.04,8.3756,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,11,107.899,8.7432,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,12,107.758,9.102,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,13,107.617,9.4519,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,14,107.476,9.7929,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,15,107.335,10.125,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,16,107.194,10.4482,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,17,107.053,10.7626,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,18,106.912,11.068,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,19,106.771,11.3646,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,20,106.63,11.6522,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,21,106.489,11.931,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,22,106.348,12.2009,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,23,106.207,12.4619,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,24,106.066,12.714,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,25,105.925,12.9572,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,26,105.784,13.1916,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,27,105.643,13.417,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,28,105.502,13.6336,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,29,105.361,13.8412,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,30,105.22,14.04,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,31,105.079,14.2299,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,32,104.938,14.4109,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,33,104.797,14.583,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,34,104.656,14.7462,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,35,104.515,14.9006,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,36,104.374,15.046,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,37,104.233,15.1826,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,38,104.092,15.3102,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,39,103.951,15.429,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,40,103.81,15.5389,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,41,103.669,15.6399,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,42,103.528,15.732,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,43,103.387,15.8152,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,44,103.246,15.8896,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,45,103.105,15.955,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,46,102.964,16.0116,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,47,102.823,16.0592,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,48,102.682,16.098,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,49,102.541,16.1279,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,50,102.4,16.1489,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,51,102.259,16.161,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,52,102.118,16.1642,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,53,101.977,16.1586,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,54,101.836,16.144,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,55,101.695,16.1206,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,56,101.554,16.0882,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,57,101.413,16.047,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,58,101.272,15.9969,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,59,101.131,15.9379,Export-heavy,2.77,12.87,11.94,0.93
+Thailand,Thailand,60,100.99,15.87,Export-heavy,2.77,12.87,11.94,0.93
+"Korea, Rep.","Korea, Rep.",0,109.45,4.21,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",1,109.7553,5.0006,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",2,110.0607,5.7822,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",3,110.366,6.555,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",4,110.6713,7.3189,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",5,110.9767,8.0739,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",6,111.282,8.82,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",7,111.5873,9.5572,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",8,111.8927,10.2856,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",9,112.198,11.005,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",10,112.5033,11.7156,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",11,112.8087,12.4172,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",12,113.114,13.11,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",13,113.4193,13.7939,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",14,113.7247,14.4689,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",15,114.03,15.135,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",16,114.3353,15.7922,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",17,114.6407,16.4406,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",18,114.946,17.08,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",19,115.2513,17.7106,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",20,115.5567,18.3322,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",21,115.862,18.945,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",22,116.1673,19.5489,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",23,116.4727,20.1439,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",24,116.778,20.73,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",25,117.0833,21.3072,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",26,117.3887,21.8756,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",27,117.694,22.435,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",28,117.9993,22.9856,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",29,118.3047,23.5272,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",30,118.61,24.06,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",31,118.9153,24.5839,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",32,119.2207,25.0989,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",33,119.526,25.605,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",34,119.8313,26.1022,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",35,120.1367,26.5906,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",36,120.442,27.07,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",37,120.7473,27.5406,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",38,121.0527,28.0022,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",39,121.358,28.455,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",40,121.6633,28.8989,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",41,121.9687,29.3339,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",42,122.274,29.76,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",43,122.5793,30.1772,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",44,122.8847,30.5856,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",45,123.19,30.985,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",46,123.4953,31.3756,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",47,123.8007,31.7572,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",48,124.106,32.13,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",49,124.4113,32.4939,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",50,124.7167,32.8489,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",51,125.022,33.195,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",52,125.3273,33.5322,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",53,125.6327,33.8606,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",54,125.938,34.18,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",55,126.2433,34.4906,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",56,126.5487,34.7922,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",57,126.854,35.085,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",58,127.1593,35.3689,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",59,127.4647,35.6439,Export-heavy,2.64,12.25,12.1,0.16
+"Korea, Rep.","Korea, Rep.",60,127.77,35.91,Export-heavy,2.64,12.25,12.1,0.16
+Vietnam,Vietnam,0,109.45,4.21,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,1,109.4305,4.6364,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,2,109.411,5.0539,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,3,109.3915,5.4625,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,4,109.372,5.8622,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,5,109.3525,6.2531,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,6,109.333,6.635,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,7,109.3135,7.0081,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,8,109.294,7.3722,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,9,109.2745,7.7275,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,10,109.255,8.0739,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,11,109.2355,8.4114,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,12,109.216,8.74,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,13,109.1965,9.0597,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,14,109.177,9.3706,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,15,109.1575,9.6725,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,16,109.138,9.9656,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,17,109.1185,10.2497,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,18,109.099,10.525,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,19,109.0795,10.7914,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,20,109.06,11.0489,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,21,109.0405,11.2975,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,22,109.021,11.5372,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,23,109.0015,11.7681,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,24,108.982,11.99,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,25,108.9625,12.2031,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,26,108.943,12.4072,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,27,108.9235,12.6025,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,28,108.904,12.7889,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,29,108.8845,12.9664,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,30,108.865,13.135,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,31,108.8455,13.2947,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,32,108.826,13.4456,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,33,108.8065,13.5875,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,34,108.787,13.7206,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,35,108.7675,13.8447,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,36,108.748,13.96,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,37,108.7285,14.0664,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,38,108.709,14.1639,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,39,108.6895,14.2525,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,40,108.67,14.3322,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,41,108.6505,14.4031,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,42,108.631,14.465,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,43,108.6115,14.5181,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,44,108.592,14.5622,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,45,108.5725,14.5975,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,46,108.553,14.6239,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,47,108.5335,14.6414,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,48,108.514,14.65,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,49,108.4945,14.6497,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,50,108.475,14.6406,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,51,108.4555,14.6225,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,52,108.436,14.5956,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,53,108.4165,14.5597,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,54,108.397,14.515,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,55,108.3775,14.4614,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,56,108.358,14.3989,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,57,108.3385,14.3275,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,58,108.319,14.2472,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,59,108.2995,14.1581,Export-heavy,2.47,11.4,6.01,5.39
+Vietnam,Vietnam,60,108.28,14.06,Export-heavy,2.47,11.4,6.01,5.39
+Indonesia,Indonesia,0,109.45,4.21,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,1,109.5245,4.3889,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,2,109.599,4.5589,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,3,109.6735,4.72,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,4,109.748,4.8722,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,5,109.8225,5.0156,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,6,109.897,5.15,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,7,109.9715,5.2756,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,8,110.046,5.3922,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,9,110.1205,5.5,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,10,110.195,5.5989,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,11,110.2695,5.6889,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,12,110.344,5.77,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,13,110.4185,5.8422,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,14,110.493,5.9056,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,15,110.5675,5.96,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,16,110.642,6.0056,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,17,110.7165,6.0422,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,18,110.791,6.07,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,19,110.8655,6.0889,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,20,110.94,6.0989,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,21,111.0145,6.1,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,22,111.089,6.0922,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,23,111.1635,6.0756,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,24,111.238,6.05,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,25,111.3125,6.0156,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,26,111.387,5.9722,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,27,111.4615,5.92,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,28,111.536,5.8589,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,29,111.6105,5.7889,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,30,111.685,5.71,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,31,111.7595,5.6222,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,32,111.834,5.5256,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,33,111.9085,5.42,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,34,111.983,5.3056,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,35,112.0575,5.1822,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,36,112.132,5.05,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,37,112.2065,4.9089,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,38,112.281,4.7589,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,39,112.3555,4.6,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,40,112.43,4.4322,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,41,112.5045,4.2556,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,42,112.579,4.07,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,43,112.6535,3.8756,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,44,112.728,3.6722,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,45,112.8025,3.46,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,46,112.877,3.2389,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,47,112.9515,3.0089,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,48,113.026,2.77,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,49,113.1005,2.5222,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,50,113.175,2.2656,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,51,113.2495,2.0,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,52,113.324,1.7256,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,53,113.3985,1.4422,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,54,113.473,1.15,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,55,113.5475,0.8489,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,56,113.622,0.5389,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,57,113.6965,0.22,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,58,113.771,-0.1078,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,59,113.8455,-0.4444,Import-heavy,2.42,11.16,13.22,-2.06
+Indonesia,Indonesia,60,113.92,-0.79,Import-heavy,2.42,11.16,13.22,-2.06
+Australia,Australia,0,109.45,4.21,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,1,109.8555,3.9809,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,2,110.261,3.7429,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,3,110.6665,3.496,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,4,111.072,3.2402,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,5,111.4775,2.9756,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,6,111.883,2.702,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,7,112.2885,2.4196,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,8,112.694,2.1282,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,9,113.0995,1.828,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,10,113.505,1.5189,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,11,113.9105,1.2009,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,12,114.316,0.874,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,13,114.7215,0.5382,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,14,115.127,0.1936,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,15,115.5325,-0.16,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,16,115.938,-0.5224,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,17,116.3435,-0.8938,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,18,116.749,-1.274,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,19,117.1545,-1.6631,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,20,117.56,-2.0611,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,21,117.9655,-2.468,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,22,118.371,-2.8838,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,23,118.7765,-3.3084,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,24,119.182,-3.742,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,25,119.5875,-4.1844,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,26,119.993,-4.6358,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,27,120.3985,-5.096,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,28,120.804,-5.5651,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,29,121.2095,-6.0431,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,30,121.615,-6.53,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,31,122.0205,-7.0258,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,32,122.426,-7.5304,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,33,122.8315,-8.044,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,34,123.237,-8.5664,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,35,123.6425,-9.0978,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,36,124.048,-9.638,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,37,124.4535,-10.1871,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,38,124.859,-10.7451,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,39,125.2645,-11.312,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,40,125.67,-11.8878,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,41,126.0755,-12.4724,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,42,126.481,-13.066,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,43,126.8865,-13.6684,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,44,127.292,-14.2798,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,45,127.6975,-14.9,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,46,128.103,-15.5291,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,47,128.5085,-16.1671,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,48,128.914,-16.814,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,49,129.3195,-17.4698,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,50,129.725,-18.1344,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,51,130.1305,-18.808,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,52,130.536,-19.4904,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,53,130.9415,-20.1818,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,54,131.347,-20.882,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,55,131.7525,-21.5911,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,56,132.158,-22.3091,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,57,132.5635,-23.036,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,58,132.969,-23.7718,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,59,133.3745,-24.5164,Export-heavy,2.37,10.94,7.62,3.33
+Australia,Australia,60,133.78,-25.27,Export-heavy,2.37,10.94,7.62,3.33
+India,India,0,109.45,4.21,Export-heavy,2.17,9.98,6.54,3.44
+India,India,1,108.9418,4.7452,Export-heavy,2.17,9.98,6.54,3.44
+India,India,2,108.4337,5.2716,Export-heavy,2.17,9.98,6.54,3.44
+India,India,3,107.9255,5.789,Export-heavy,2.17,9.98,6.54,3.44
+India,India,4,107.4173,6.2976,Export-heavy,2.17,9.98,6.54,3.44
+India,India,5,106.9092,6.7972,Export-heavy,2.17,9.98,6.54,3.44
+India,India,6,106.401,7.288,Export-heavy,2.17,9.98,6.54,3.44
+India,India,7,105.8928,7.7699,Export-heavy,2.17,9.98,6.54,3.44
+India,India,8,105.3847,8.2429,Export-heavy,2.17,9.98,6.54,3.44
+India,India,9,104.8765,8.707,Export-heavy,2.17,9.98,6.54,3.44
+India,India,10,104.3683,9.1622,Export-heavy,2.17,9.98,6.54,3.44
+India,India,11,103.8602,9.6086,Export-heavy,2.17,9.98,6.54,3.44
+India,India,12,103.352,10.046,Export-heavy,2.17,9.98,6.54,3.44
+India,India,13,102.8438,10.4746,Export-heavy,2.17,9.98,6.54,3.44
+India,India,14,102.3357,10.8942,Export-heavy,2.17,9.98,6.54,3.44
+India,India,15,101.8275,11.305,Export-heavy,2.17,9.98,6.54,3.44
+India,India,16,101.3193,11.7069,Export-heavy,2.17,9.98,6.54,3.44
+India,India,17,100.8112,12.0999,Export-heavy,2.17,9.98,6.54,3.44
+India,India,18,100.303,12.484,Export-heavy,2.17,9.98,6.54,3.44
+India,India,19,99.7948,12.8592,Export-heavy,2.17,9.98,6.54,3.44
+India,India,20,99.2867,13.2256,Export-heavy,2.17,9.98,6.54,3.44
+India,India,21,98.7785,13.583,Export-heavy,2.17,9.98,6.54,3.44
+India,India,22,98.2703,13.9316,Export-heavy,2.17,9.98,6.54,3.44
+India,India,23,97.7622,14.2712,Export-heavy,2.17,9.98,6.54,3.44
+India,India,24,97.254,14.602,Export-heavy,2.17,9.98,6.54,3.44
+India,India,25,96.7458,14.9239,Export-heavy,2.17,9.98,6.54,3.44
+India,India,26,96.2377,15.2369,Export-heavy,2.17,9.98,6.54,3.44
+India,India,27,95.7295,15.541,Export-heavy,2.17,9.98,6.54,3.44
+India,India,28,95.2213,15.8362,Export-heavy,2.17,9.98,6.54,3.44
+India,India,29,94.7132,16.1226,Export-heavy,2.17,9.98,6.54,3.44
+India,India,30,94.205,16.4,Export-heavy,2.17,9.98,6.54,3.44
+India,India,31,93.6968,16.6686,Export-heavy,2.17,9.98,6.54,3.44
+India,India,32,93.1887,16.9282,Export-heavy,2.17,9.98,6.54,3.44
+India,India,33,92.6805,17.179,Export-heavy,2.17,9.98,6.54,3.44
+India,India,34,92.1723,17.4209,Export-heavy,2.17,9.98,6.54,3.44
+India,India,35,91.6642,17.6539,Export-heavy,2.17,9.98,6.54,3.44
+India,India,36,91.156,17.878,Export-heavy,2.17,9.98,6.54,3.44
+India,India,37,90.6478,18.0932,Export-heavy,2.17,9.98,6.54,3.44
+India,India,38,90.1397,18.2996,Export-heavy,2.17,9.98,6.54,3.44
+India,India,39,89.6315,18.497,Export-heavy,2.17,9.98,6.54,3.44
+India,India,40,89.1233,18.6856,Export-heavy,2.17,9.98,6.54,3.44
+India,India,41,88.6152,18.8652,Export-heavy,2.17,9.98,6.54,3.44
+India,India,42,88.107,19.036,Export-heavy,2.17,9.98,6.54,3.44
+India,India,43,87.5988,19.1979,Export-heavy,2.17,9.98,6.54,3.44
+India,India,44,87.0907,19.3509,Export-heavy,2.17,9.98,6.54,3.44
+India,India,45,86.5825,19.495,Export-heavy,2.17,9.98,6.54,3.44
+India,India,46,86.0743,19.6302,Export-heavy,2.17,9.98,6.54,3.44
+India,India,47,85.5662,19.7566,Export-heavy,2.17,9.98,6.54,3.44
+India,India,48,85.058,19.874,Export-heavy,2.17,9.98,6.54,3.44
+India,India,49,84.5498,19.9826,Export-heavy,2.17,9.98,6.54,3.44
+India,India,50,84.0417,20.0822,Export-heavy,2.17,9.98,6.54,3.44
+India,India,51,83.5335,20.173,Export-heavy,2.17,9.98,6.54,3.44
+India,India,52,83.0253,20.2549,Export-heavy,2.17,9.98,6.54,3.44
+India,India,53,82.5172,20.3279,Export-heavy,2.17,9.98,6.54,3.44
+India,India,54,82.009,20.392,Export-heavy,2.17,9.98,6.54,3.44
+India,India,55,81.5008,20.4472,Export-heavy,2.17,9.98,6.54,3.44
+India,India,56,80.9927,20.4936,Export-heavy,2.17,9.98,6.54,3.44
+India,India,57,80.4845,20.531,Export-heavy,2.17,9.98,6.54,3.44
+India,India,58,79.9763,20.5596,Export-heavy,2.17,9.98,6.54,3.44
+India,India,59,79.4682,20.5792,Export-heavy,2.17,9.98,6.54,3.44
+India,India,60,78.96,20.59,Export-heavy,2.17,9.98,6.54,3.44
+Netherlands,Netherlands,0,109.45,4.21,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,1,107.714,5.6232,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,2,105.978,7.0156,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,3,104.242,8.3871,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,4,102.506,9.7379,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,5,100.77,11.0677,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,6,99.034,12.3768,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,7,97.298,13.665,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,8,95.562,14.9324,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,9,93.826,16.1789,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,10,92.09,17.4047,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,11,90.354,18.6096,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,12,88.618,19.7936,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,13,86.882,20.9568,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,14,85.146,22.0992,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,15,83.41,23.2208,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,16,81.674,24.3215,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,17,79.938,25.4014,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,18,78.202,26.4605,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,19,76.466,27.4987,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,20,74.73,28.5161,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,21,72.994,29.5127,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,22,71.258,30.4884,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,23,69.522,31.4433,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,24,67.786,32.3774,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,25,66.05,33.2907,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,26,64.314,34.1831,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,27,62.578,35.0547,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,28,60.842,35.9054,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,29,59.106,36.7353,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,30,57.37,37.5444,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,31,55.634,38.3327,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,32,53.898,39.1001,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,33,52.162,39.8467,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,34,50.426,40.5724,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,35,48.69,41.2773,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,36,46.954,41.9614,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,37,45.218,42.6247,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,38,43.482,43.2671,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,39,41.746,43.8887,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,40,40.01,44.4895,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,41,38.274,45.0694,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,42,36.538,45.6285,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,43,34.802,46.1668,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,44,33.066,46.6842,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,45,31.33,47.1808,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,46,29.594,47.6566,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,47,27.858,48.1115,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,48,26.122,48.5456,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,49,24.386,48.9589,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,50,22.65,49.3513,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,51,20.914,49.7229,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,52,19.178,50.0737,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,53,17.442,50.4037,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,54,15.706,50.7128,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,55,13.97,51.0011,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,56,12.234,51.2685,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,57,10.498,51.5151,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,58,8.762,51.7409,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,59,7.026,51.9459,Export-heavy,1.74,7.86,1.12,6.74
+Netherlands,Netherlands,60,5.29,52.13,Export-heavy,1.74,7.86,1.12,6.74
+Germany,Germany,0,109.45,4.21,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,1,107.8,5.5768,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,2,106.15,6.9237,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,3,104.5,8.2509,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,4,102.85,9.5583,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,5,101.2,10.8458,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,6,99.55,12.1136,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,7,97.9,13.3616,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,8,96.25,14.5897,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,9,94.6,15.7981,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,10,92.95,16.9867,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,11,91.3,18.1554,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,12,89.65,19.3044,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,13,88.0,20.4336,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,14,86.35,21.5429,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,15,84.7,22.6325,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,16,83.05,23.7023,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,17,81.4,24.7522,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,18,79.75,25.7824,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,19,78.1,26.7928,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,20,76.45,27.7833,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,21,74.8,28.7541,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,22,73.15,29.7051,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,23,71.5,30.6362,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,24,69.85,31.5476,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,25,68.2,32.4392,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,26,66.55,33.3109,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,27,64.9,34.1629,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,28,63.25,34.9951,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,29,61.6,35.8074,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,30,59.95,36.6,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,31,58.3,37.3728,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,32,56.65,38.1257,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,33,55.0,38.8589,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,34,53.35,39.5723,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,35,51.7,40.2658,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,36,50.05,40.9396,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,37,48.4,41.5936,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,38,46.75,42.2277,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,39,45.1,42.8421,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,40,43.45,43.4367,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,41,41.8,44.0114,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,42,40.15,44.5664,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,43,38.5,45.1016,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,44,36.85,45.6169,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,45,35.2,46.1125,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,46,33.55,46.5883,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,47,31.9,47.0442,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,48,30.25,47.4804,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,49,28.6,47.8968,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,50,26.95,48.2933,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,51,25.3,48.6701,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,52,23.65,49.0271,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,53,22.0,49.3642,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,54,20.35,49.6816,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,55,18.7,49.9792,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,56,17.05,50.2569,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,57,15.4,50.5149,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,58,13.75,50.7531,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,59,12.1,50.9714,Import-heavy,1.5,6.7,7.21,-0.51
+Germany,Germany,60,10.45,51.17,Import-heavy,1.5,6.7,7.21,-0.51
