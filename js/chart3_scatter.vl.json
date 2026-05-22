@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Scatterplot: trade openness (exports % GDP) vs GDP per capita. Malaysia annotated as outlier.",
+  "description": "Scatterplot: trade openness (trade % GDP) vs GDP per capita. Dashed line = log regression (expected trend). Malaysia highlighted as outlier above trend.",
   "width": "container",
   "height": 320,
   "config": {
@@ -18,7 +18,8 @@
           "scale": { "type": "log" },
           "axis": {
             "title": "GDP per capita, PPP (log scale)",
-            "titleFontSize": 11,
+            "titleFontSize": 13,
+            "labelFontSize": 12,
             "tickCount": 5,
             "format": ",.0f"
           }
@@ -28,26 +29,64 @@
           "type": "quantitative",
           "axis": {
             "title": "Trade as % of GDP",
-            "titleFontSize": 11,
+            "titleFontSize": 13,
+            "labelFontSize": 12,
             "grid": true,
             "gridColor": "#f0ede8"
           }
         },
         "color": {
-          "condition": { "test": "datum.highlight == 'True'", "value": "#534AB7" },
+          "condition": { "test": "datum.highlight == 'True'", "value": "#EF9F27" },
           "value": "#B4B2A9"
         },
         "size": {
-          "condition": { "test": "datum.highlight == 'True'", "value": 120 },
+          "condition": { "test": "datum.highlight == 'True'", "value": 140 },
           "value": 40
         },
         "tooltip": [
-          { "field": "country", "type": "nominal", "title": "Country" },
-          { "field": "gdp_per_capita", "type": "quantitative",
-            "format": ",.0f", "title": "GDP per capita (PPP)" },
-          { "field": "trade_pct_gdp", "type": "quantitative",
-            "format": ".1f", "title": "Trade % of GDP" }
+          { "field": "country",       "type": "nominal",      "title": "Country" },
+          { "field": "gdp_per_capita","type": "quantitative", "format": ",.0f", "title": "GDP per capita (PPP)" },
+          { "field": "trade_pct_gdp", "type": "quantitative", "format": ".1f",  "title": "Trade % of GDP" }
         ]
+      }
+    },
+    {
+      "transform": [
+        { "regression": "trade_pct_gdp", "on": "gdp_per_capita", "method": "log" }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeDash": [5, 4],
+        "strokeWidth": 1.8,
+        "color": "#888780",
+        "opacity": 0.75
+      },
+      "encoding": {
+        "x": { "field": "gdp_per_capita", "type": "quantitative", "scale": { "type": "log" } },
+        "y": { "field": "trade_pct_gdp",  "type": "quantitative" }
+      }
+    },
+    {
+      "transform": [
+        { "regression": "trade_pct_gdp", "on": "gdp_per_capita", "method": "log" },
+        {
+          "window": [{ "op": "rank", "as": "rk" }],
+          "sort": [{ "field": "gdp_per_capita", "order": "descending" }]
+        },
+        { "filter": "datum.rk === 1" }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dy": -10,
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#888780"
+      },
+      "encoding": {
+        "x": { "field": "gdp_per_capita", "type": "quantitative", "scale": { "type": "log" } },
+        "y": { "field": "trade_pct_gdp",  "type": "quantitative" },
+        "text": { "value": "Expected trend" }
       }
     },
     {
@@ -56,15 +95,14 @@
         "type": "text",
         "align": "left",
         "dx": 10,
-        "dy": -4,
-        "fontSize": 12,
+        "dy": -5,
+        "fontSize": 13,
         "fontWeight": "bold",
-        "color": "#534AB7"
+        "color": "#EF9F27"
       },
       "encoding": {
-        "x": { "field": "gdp_per_capita", "type": "quantitative",
-                "scale": { "type": "log" } },
-        "y": { "field": "trade_pct_gdp", "type": "quantitative" },
+        "x": { "field": "gdp_per_capita", "type": "quantitative", "scale": { "type": "log" } },
+        "y": { "field": "trade_pct_gdp",  "type": "quantitative" },
         "text": { "value": "Malaysia" }
       }
     }
