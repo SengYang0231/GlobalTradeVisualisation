@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Malaysia exports vs imports 1990-2023. Surplus gap shaded. Key events annotated.",
+  "description": "Malaysia exports vs imports 1990-2023. Surplus gap shaded. Crisis events annotated.",
   "width": "container",
   "height": 340,
   "config": {
@@ -10,7 +10,7 @@
   "data": { "url": "data/malaysia_trade_timeseries.csv" },
   "layer": [
     {
-      "mark": { "type": "area", "opacity": 0.15, "line": false },
+      "mark": { "type": "area", "opacity": 0.20, "line": false },
       "encoding": {
         "x": {
           "field": "year",
@@ -20,7 +20,8 @@
             "tickCount": 7,
             "format": "d",
             "labelAngle": 0,
-            "labelFlush": true
+            "labelFlush": true,
+            "labelFontSize": 12
           }
         },
         "y": {
@@ -28,7 +29,8 @@
           "type": "quantitative",
           "axis": {
             "title": "Trade value (USD billions)",
-            "titleFontSize": 11,
+            "titleFontSize": 13,
+            "labelFontSize": 12,
             "grid": true,
             "gridColor": "#f0ede8"
           }
@@ -37,7 +39,7 @@
           "field": "metric", "type": "nominal",
           "scale": {
             "domain": ["Exports", "Imports"],
-            "range": ["#1D9E75", "#D85A30"]
+            "range": ["#FB3640", "#000F08"]
           },
           "legend": null
         }
@@ -48,35 +50,30 @@
       "encoding": {
         "x": {
           "field": "year", "type": "quantitative",
-          "axis": { "tickCount": 7, "format": "d", "labelAngle": 0 }
+          "axis": { "tickCount": 7, "format": "d", "labelAngle": 0, "labelFontSize": 12 }
         },
         "y": { "field": "value_usd_bn", "type": "quantitative" },
         "color": {
           "field": "metric", "type": "nominal",
           "scale": {
             "domain": ["Exports", "Imports"],
-            "range": ["#1D9E75", "#D85A30"]
+            "range": ["#FB3640", "#000F08"]
           },
-          "legend": {
-            "title": null,
-            "orient": "top-left",
-            "labelFontSize": 12
-          }
+          "legend": null
         },
         "tooltip": [
-          { "field": "year", "type": "quantitative", "format": "d", "title": "Year" },
-          { "field": "metric", "type": "nominal", "title": "Metric" },
-          { "field": "value_usd_bn", "type": "quantitative",
-            "format": ".2f", "title": "USD billions" }
+          { "field": "year",         "type": "quantitative", "format": "d",   "title": "Year" },
+          { "field": "metric",       "type": "nominal",                        "title": "Metric" },
+          { "field": "value_usd_bn", "type": "quantitative", "format": ".2f", "title": "USD billions" }
         ]
       }
     },
     {
       "data": {
         "values": [
-          { "year": 1997, "label": "Asian\nFinancial Crisis" },
-          { "year": 2008, "label": "Global\nFinancial Crisis" },
-          { "year": 2020, "label": "COVID-19" }
+          { "year": 1997 },
+          { "year": 2008 },
+          { "year": 2020 }
         ]
       },
       "mark": {
@@ -91,27 +88,51 @@
       }
     },
     {
-      "data": {
-        "values": [
-          { "year": 1997, "label": "Asian Financial Crisis" },
-          { "year": 2008, "label": "Global Financial Crisis" },
-          { "year": 2020, "label": "COVID-19" }
-        ]
-      },
+      "data": { "values": [{ "year": 1997 }] },
       "mark": {
         "type": "text",
+        "text": "Asian Financial Crisis",
         "align": "left",
-        "dx": 4,
-        "dy": 10,
-        "fontSize": 10,
+        "dx": 5,
+        "y": 30,
+        "fontSize": 12,
         "fontStyle": "italic",
-        "fontWeight": "normal",
-        "color": "#BA7517",
-        "y": 5
+        "color": "#BA7517"
       },
       "encoding": {
-        "x": { "field": "year", "type": "quantitative" },
-        "text": { "field": "label" }
+        "x": { "field": "year", "type": "quantitative" }
+      }
+    },
+    {
+      "data": { "values": [{ "year": 2008 }] },
+      "mark": {
+        "type": "text",
+        "text": "Global Financial Crisis",
+        "align": "left",
+        "dx": 5,
+        "y": 15,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "#BA7517"
+      },
+      "encoding": {
+        "x": { "field": "year", "type": "quantitative" }
+      }
+    },
+    {
+      "data": { "values": [{ "year": 2020 }] },
+      "mark": {
+        "type": "text",
+        "text": "COVID-19",
+        "align": "right",
+        "dx": -5,
+        "y": 15,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "#BA7517"
+      },
+      "encoding": {
+        "x": { "field": "year", "type": "quantitative" }
       }
     }
   ]
