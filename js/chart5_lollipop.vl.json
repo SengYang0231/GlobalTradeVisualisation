@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Malaysia trade balance 1990-2023. Vertical lollipop. Annotations staggered to avoid overlap.",
+  "description": "Malaysia trade balance 1990-2023. Vertical lollipop. Surplus = red, Deficit = black.",
   "width": "container",
   "height": 280,
   "config": {
@@ -10,7 +10,7 @@
   "data": { "url": "data/malaysia_trade_balance.csv" },
   "layer": [
     {
-      "mark": { "type": "rule", "strokeWidth": 1, "color": "#CCCCCC", "strokeDash": [2,2] },
+      "mark": { "type": "rule", "strokeWidth": 1.5, "color": "#CCCCCC", "strokeDash": [2, 2] },
       "encoding": { "y": { "datum": 0 } }
     },
     {
@@ -19,41 +19,63 @@
         "x": {
           "field": "year", "type": "quantitative",
           "scale": { "domain": [1990, 2023] },
-          "axis": { "title": null, "tickCount": 7, "format": "d", "labelAngle": 0 }
+          "axis": {
+            "title": null,
+            "tickCount": 7,
+            "format": "d",
+            "labelAngle": 0,
+            "labelFontSize": 12
+          }
         },
         "y": {
           "field": "balance_usd_bn", "type": "quantitative",
-          "axis": { "title": "Trade balance (USD billions)", "titleFontSize": 11,
-                    "grid": true, "gridColor": "#f0ede8" }
+          "axis": {
+            "title": "Trade balance (USD billions)",
+            "titleFontSize": 13,
+            "labelFontSize": 12,
+            "grid": true,
+            "gridColor": "#f0ede8"
+          }
         },
         "y2": { "datum": 0 },
         "color": {
           "field": "direction", "type": "nominal",
-          "scale": { "domain": ["Surplus","Deficit"], "range": ["#1D9E75","#D85A30"] },
+          "scale": { "domain": ["Surplus", "Deficit"], "range": ["#FB3640", "#000F08"] },
           "legend": null
         }
       }
     },
     {
-      "mark": { "type": "point", "filled": true, "size": 55, "strokeWidth": 0 },
+      "mark": { "type": "point", "filled": true, "size": 75, "strokeWidth": 0 },
       "encoding": {
         "x": { "field": "year", "type": "quantitative", "scale": { "domain": [1990, 2023] } },
         "y": { "field": "balance_usd_bn", "type": "quantitative" },
         "color": {
           "field": "direction", "type": "nominal",
-          "scale": { "domain": ["Surplus","Deficit"], "range": ["#1D9E75","#D85A30"] },
-          "legend": { "title": null, "orient": "top-left", "labelFontSize": 11 }
+          "scale": { "domain": ["Surplus", "Deficit"], "range": ["#FB3640", "#000F08"] },
+          "legend": {
+            "title": null,
+            "orient": "top-left",
+            "labelFontSize": 13,
+            "symbolSize": 120
+          }
         },
         "tooltip": [
-          { "field": "year",           "type": "quantitative", "format": "d", "title": "Year" },
+          { "field": "year",           "type": "quantitative", "format": "d",   "title": "Year" },
           { "field": "balance_usd_bn", "type": "quantitative", "format": ".2f", "title": "Balance (USD bn)" },
-          { "field": "direction",      "type": "nominal",      "title": "Status" }
+          { "field": "direction",      "type": "nominal",                        "title": "Status" }
         ]
       }
     },
     {
       "transform": [ { "filter": "datum.event !== ''" } ],
-      "mark": { "type": "rule", "strokeDash": [4,3], "strokeWidth": 1.2, "color": "#BA7517", "opacity": 0.8 },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 3],
+        "strokeWidth": 1.2,
+        "color": "#BA7517",
+        "opacity": 0.8
+      },
       "encoding": {
         "x": { "field": "year", "type": "quantitative", "scale": { "domain": [1990, 2023] } }
       }
@@ -61,16 +83,15 @@
     {
       "data": {
         "values": [
-          { "year": 1997, "label": "1997 Crisis",  "dy": 8  },
-          { "year": 2008, "label": "2008 GFC",     "dy": 22 },
-          { "year": 2020, "label": "COVID-19",     "dy": 36 }
+          { "year": 1997, "label": "1997 Crisis", "dy": 8  },
+          { "year": 2008, "label": "2008 GFC",    "dy": 22 }
         ]
       },
       "mark": {
         "type": "text",
         "align": "left",
         "dx": 4,
-        "fontSize": 10,
+        "fontSize": 12,
         "fontStyle": "italic",
         "color": "#BA7517"
       },
@@ -79,6 +100,23 @@
         "y":    { "value": 0 },
         "dy":   { "field": "dy",   "type": "quantitative" },
         "text": { "field": "label", "type": "nominal" }
+      }
+    },
+    {
+      "data": { "values": [{ "year": 2020 }] },
+      "mark": {
+        "type": "text",
+        "text": "COVID-19",
+        "align": "right",
+        "dx": -4,
+        "dy": 8,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "#BA7517"
+      },
+      "encoding": {
+        "x": { "field": "year", "type": "quantitative", "scale": { "domain": [1990, 2023] } },
+        "y": { "value": 0 }
       }
     }
   ]
