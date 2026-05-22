@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "World choropleth — merchandise exports as % of GDP. Malaysia highlighted in purple.",
+  "description": "World choropleth — merchandise exports as % of GDP. Malaysia highlighted in amber.",
   "width": "container",
   "height": 420,
   "config": { "font": "Inter, Segoe UI, sans-serif", "view": { "stroke": null } },
@@ -32,21 +32,31 @@
       "mark": { "type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.4 },
       "encoding": {
         "color": {
-          "condition": {
-            "test": "datum.alpha3 === 'MYS'",
-            "value": "#534AB7"
-          },
+          "condition": [
+            {
+              "test": "datum.alpha3 === 'MYS'",
+              "value": "#EF9F27"
+            },
+            {
+              "test": "!isValid(datum.exports_pct_gdp)",
+              "value": "#D3D1C7"
+            }
+          ],
           "field": "exports_pct_gdp",
           "type": "quantitative",
-          "scale": { "scheme": "tealblues", "domain": [0, 150] },
+          "scale": {
+            "scheme": "blues",
+            "domain": [0, 100],
+            "clamp": true
+          },
           "legend": {
             "title": "Exports % of GDP",
             "orient": "bottom",
             "direction": "horizontal",
-            "gradientLength": 160,
-            "titleFontSize": 11,
-            "labelFontSize": 10,
-            "offset": 8
+            "gradientLength": 200,
+            "titleFontSize": 13,
+            "labelFontSize": 12,
+            "offset": 10
           }
         },
         "tooltip": [
@@ -59,12 +69,29 @@
       "data": { "values": [{ "lon": 109.45, "lat": 4.21 }] },
       "projection": { "type": "naturalEarth1" },
       "mark": {
+        "type": "point",
+        "size": 90,
+        "filled": true,
+        "color": "#EF9F27",
+        "stroke": "#ffffff",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "longitude": { "field": "lon", "type": "quantitative" },
+        "latitude":  { "field": "lat", "type": "quantitative" }
+      }
+    },
+    {
+      "data": { "values": [{ "lon": 109.45, "lat": 4.21 }] },
+      "projection": { "type": "naturalEarth1" },
+      "mark": {
         "type": "text",
-        "text": "Malaysia ▲",
-        "fontSize": 11,
+        "text": "Malaysia",
+        "fontSize": 12,
         "fontWeight": "bold",
-        "color": "#534AB7",
-        "dy": -8
+        "color": "#EF9F27",
+        "dy": -14,
+        "dx": 4
       },
       "encoding": {
         "longitude": { "field": "lon", "type": "quantitative" },
