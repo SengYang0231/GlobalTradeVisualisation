@@ -1,12 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Arc flow map. Bezier curves — no antimeridian issues. US arc goes via Atlantic. Top 15 partners. Pure Vega-Lite.",
+  "description": "Arc flow map. Dropdown selects partner. Default = China.",
   "width": "container",
   "height": 460,
   "config": {
     "font": "Inter, Segoe UI, sans-serif",
     "view": { "stroke": null }
   },
+  "params": [
+    { "name": "selected_partner", "value": "China" }
+  ],
   "projection": { "type": "naturalEarth1" },
   "layer": [
     {
@@ -18,7 +21,7 @@
     },
     {
       "data": { "url": "data/malaysia_arc_points.csv" },
-      "mark": { "type": "line", "strokeOpacity": 0.8, "strokeCap": "round" },
+      "mark": { "type": "line", "strokeCap": "round" },
       "encoding": {
         "longitude": { "field": "lon",    "type": "quantitative" },
         "latitude":  { "field": "lat",    "type": "quantitative" },
@@ -29,18 +32,28 @@
           "type": "nominal",
           "scale": {
             "domain": ["Export-heavy", "Import-heavy"],
-            "range":  ["#1D9E75",      "#D85A30"]
+            "range":  ["#FB3640", "#000F08"]
           },
           "legend": {
-            "title": "Trade type",
+            "title": "Net trade relationship",
+            "titleFontSize": 12,
             "orient": "bottom-left",
-            "labelFontSize": 11
+            "labelFontSize": 13,
+            "symbolSize": 200,
+            "symbolStrokeWidth": 3
           }
         },
         "strokeWidth": {
           "field": "stroke_width",
           "type": "quantitative",
           "legend": null
+        },
+        "strokeOpacity": {
+          "condition": {
+            "test": "datum.partner === selected_partner",
+            "value": 0.9
+          },
+          "value": 0.07
         },
         "tooltip": [
           { "field": "partner",        "type": "nominal",      "title": "Partner" },
@@ -53,20 +66,50 @@
     },
     {
       "data": { "url": "data/malaysia_arc_map.csv" },
-      "mark": { "type": "circle", "size": 50, "color": "#534AB7", "opacity": 0.85, "stroke": "#ffffff", "strokeWidth": 1 },
+      "mark": { "type": "circle", "stroke": "#ffffff", "strokeWidth": 1.5 },
       "encoding": {
         "longitude": { "field": "dest_lon", "type": "quantitative" },
         "latitude":  { "field": "dest_lat", "type": "quantitative" },
+        "color": {
+          "condition": {
+            "test": "datum.partner === selected_partner",
+            "value": "#EF9F27"
+          },
+          "value": "#B4B2A9"
+        },
+        "size": {
+          "condition": {
+            "test": "datum.partner === selected_partner",
+            "value": 170
+          },
+          "value": 55
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum.partner === selected_partner",
+            "value": 1
+          },
+          "value": 0.3
+        },
         "tooltip": [
           { "field": "partner",        "type": "nominal",      "title": "Partner" },
-          { "field": "exports_usd_bn", "type": "quantitative", "format": ".2f", "title": "Exports (USD bn)" }
+          { "field": "trade_type",     "type": "nominal",      "title": "Trade type" },
+          { "field": "exports_usd_bn", "type": "quantitative", "format": ".2f", "title": "Exports (USD bn)" },
+          { "field": "imports_usd_bn", "type": "quantitative", "format": ".2f", "title": "Imports (USD bn)" },
+          { "field": "balance_usd_bn", "type": "quantitative", "format": ".2f", "title": "Balance (USD bn)" }
         ]
       }
     },
     {
       "data": { "url": "data/malaysia_arc_map.csv" },
-      "transform": [ { "filter": "datum.exports_usd_bn >= 6" } ],
-      "mark": { "type": "text", "dy": -10, "fontSize": 10, "fontWeight": "500", "color": "#1a1209" },
+      "transform": [ { "filter": "datum.partner === selected_partner" } ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": "600",
+        "dy": -14,
+        "color": "#1a1209"
+      },
       "encoding": {
         "longitude": { "field": "dest_lon", "type": "quantitative" },
         "latitude":  { "field": "dest_lat", "type": "quantitative" },
@@ -74,16 +117,29 @@
       }
     },
     {
-      "data": { "values": [{ "lon": 109.45, "lat": 4.21, "label": "Malaysia" }] },
-      "mark": { "type": "circle", "size": 120, "color": "#534AB7", "stroke": "#ffffff", "strokeWidth": 2 },
+      "data": { "values": [{ "lon": 109.45, "lat": 4.21 }] },
+      "mark": {
+        "type": "circle",
+        "size": 130,
+        "color": "#EF9F27",
+        "stroke": "#ffffff",
+        "strokeWidth": 2
+      },
       "encoding": {
         "longitude": { "field": "lon", "type": "quantitative" },
         "latitude":  { "field": "lat", "type": "quantitative" }
       }
     },
     {
-      "data": { "values": [{ "lon": 109.45, "lat": 4.21, "label": "Malaysia" }] },
-      "mark": { "type": "text", "dy": -12, "fontSize": 11, "fontWeight": "bold", "color": "#534AB7" },
+      "data": { "values": [{ "lon": 111.5, "lat": 3.5, "label": "Malaysia" }] },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#EF9F27"
+      },
       "encoding": {
         "longitude": { "field": "lon", "type": "quantitative" },
         "latitude":  { "field": "lat", "type": "quantitative" },
