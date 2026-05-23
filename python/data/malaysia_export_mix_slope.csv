@@ -1,31 +1,241 @@
-snapshot_year,section,section_label,exports_rm_bil,share_pct
-2000,0,Food & Live Animals,6.47,1.73
-2000,1,Beverages & Tobacco,1.215,0.33
-2000,2,Crude Materials,10.288,2.76
-2000,3,Mineral Fuels & Petroleum,35.903,9.62
-2000,4,Animal & Vegetable Oils,12.937,3.47
-2000,5,Chemicals,14.278,3.83
-2000,6,Manufactured Goods,25.788,6.91
-2000,7,Machinery & Transport Equipment,233.379,62.52
-2000,8,Misc. Manufactured Articles,29.925,8.02
-2000,9,Other Commodities,3.088,0.83
-2013,0,Food & Live Animals,22.101,3.07
-2013,1,Beverages & Tobacco,3.884,0.54
-2013,2,Crude Materials,19.492,2.71
-2013,3,Mineral Fuels & Petroleum,160.348,22.27
-2013,4,Animal & Vegetable Oils,49.019,6.81
-2013,5,Chemicals,51.761,7.19
-2013,6,Manufactured Goods,67.7,9.4
-2013,7,Machinery & Transport Equipment,273.676,38.01
-2013,8,Misc. Manufactured Articles,67.319,9.35
-2013,9,Other Commodities,4.693,0.65
-2023,0,Food & Live Animals,46.462,3.26
-2023,1,Beverages & Tobacco,3.105,0.22
-2023,2,Crude Materials,29.662,2.08
-2023,3,Mineral Fuels & Petroleum,236.034,16.55
-2023,4,Animal & Vegetable Oils,74.888,5.25
-2023,5,Chemicals,106.155,7.44
-2023,6,Manufactured Goods,127.578,8.95
-2023,7,Machinery & Transport Equipment,650.206,45.59
-2023,8,Misc. Manufactured Articles,143.781,10.08
-2023,9,Other Commodities,8.327,0.58
+section_label,snapshot_year,share_pct
+Animal & Vegetable Oils,2000,3.47
+Animal & Vegetable Oils,2001,3.7269
+Animal & Vegetable Oils,2002,3.9838
+Animal & Vegetable Oils,2003,4.2408
+Animal & Vegetable Oils,2004,4.4977
+Animal & Vegetable Oils,2005,4.7546
+Animal & Vegetable Oils,2006,5.0115
+Animal & Vegetable Oils,2007,5.2685
+Animal & Vegetable Oils,2008,5.5254
+Animal & Vegetable Oils,2009,5.7823
+Animal & Vegetable Oils,2010,6.0392
+Animal & Vegetable Oils,2011,6.2962
+Animal & Vegetable Oils,2012,6.5531
+Animal & Vegetable Oils,2013,6.81
+Animal & Vegetable Oils,2014,6.654
+Animal & Vegetable Oils,2015,6.498
+Animal & Vegetable Oils,2016,6.342
+Animal & Vegetable Oils,2017,6.186
+Animal & Vegetable Oils,2018,6.03
+Animal & Vegetable Oils,2019,5.874
+Animal & Vegetable Oils,2020,5.718
+Animal & Vegetable Oils,2021,5.562
+Animal & Vegetable Oils,2022,5.406
+Animal & Vegetable Oils,2023,5.25
+Beverages & Tobacco,2000,0.33
+Beverages & Tobacco,2001,0.3462
+Beverages & Tobacco,2002,0.3623
+Beverages & Tobacco,2003,0.3785
+Beverages & Tobacco,2004,0.3946
+Beverages & Tobacco,2005,0.4108
+Beverages & Tobacco,2006,0.4269
+Beverages & Tobacco,2007,0.4431
+Beverages & Tobacco,2008,0.4592
+Beverages & Tobacco,2009,0.4754
+Beverages & Tobacco,2010,0.4915
+Beverages & Tobacco,2011,0.5077
+Beverages & Tobacco,2012,0.5238
+Beverages & Tobacco,2013,0.54
+Beverages & Tobacco,2014,0.508
+Beverages & Tobacco,2015,0.476
+Beverages & Tobacco,2016,0.444
+Beverages & Tobacco,2017,0.412
+Beverages & Tobacco,2018,0.38
+Beverages & Tobacco,2019,0.348
+Beverages & Tobacco,2020,0.316
+Beverages & Tobacco,2021,0.284
+Beverages & Tobacco,2022,0.252
+Beverages & Tobacco,2023,0.22
+Chemicals,2000,3.83
+Chemicals,2001,4.0885
+Chemicals,2002,4.3469
+Chemicals,2003,4.6054
+Chemicals,2004,4.8638
+Chemicals,2005,5.1223
+Chemicals,2006,5.3808
+Chemicals,2007,5.6392
+Chemicals,2008,5.8977
+Chemicals,2009,6.1562
+Chemicals,2010,6.4146
+Chemicals,2011,6.6731
+Chemicals,2012,6.9315
+Chemicals,2013,7.19
+Chemicals,2014,7.215
+Chemicals,2015,7.24
+Chemicals,2016,7.265
+Chemicals,2017,7.29
+Chemicals,2018,7.315
+Chemicals,2019,7.34
+Chemicals,2020,7.365
+Chemicals,2021,7.39
+Chemicals,2022,7.415
+Chemicals,2023,7.44
+Crude Materials,2000,2.76
+Crude Materials,2001,2.7562
+Crude Materials,2002,2.7523
+Crude Materials,2003,2.7485
+Crude Materials,2004,2.7446
+Crude Materials,2005,2.7408
+Crude Materials,2006,2.7369
+Crude Materials,2007,2.7331
+Crude Materials,2008,2.7292
+Crude Materials,2009,2.7254
+Crude Materials,2010,2.7215
+Crude Materials,2011,2.7177
+Crude Materials,2012,2.7138
+Crude Materials,2013,2.71
+Crude Materials,2014,2.647
+Crude Materials,2015,2.584
+Crude Materials,2016,2.521
+Crude Materials,2017,2.458
+Crude Materials,2018,2.395
+Crude Materials,2019,2.332
+Crude Materials,2020,2.269
+Crude Materials,2021,2.206
+Crude Materials,2022,2.143
+Crude Materials,2023,2.08
+Food & Live Animals,2000,1.73
+Food & Live Animals,2001,1.8331
+Food & Live Animals,2002,1.9362
+Food & Live Animals,2003,2.0392
+Food & Live Animals,2004,2.1423
+Food & Live Animals,2005,2.2454
+Food & Live Animals,2006,2.3485
+Food & Live Animals,2007,2.4515
+Food & Live Animals,2008,2.5546
+Food & Live Animals,2009,2.6577
+Food & Live Animals,2010,2.7608
+Food & Live Animals,2011,2.8638
+Food & Live Animals,2012,2.9669
+Food & Live Animals,2013,3.07
+Food & Live Animals,2014,3.089
+Food & Live Animals,2015,3.108
+Food & Live Animals,2016,3.127
+Food & Live Animals,2017,3.146
+Food & Live Animals,2018,3.165
+Food & Live Animals,2019,3.184
+Food & Live Animals,2020,3.203
+Food & Live Animals,2021,3.222
+Food & Live Animals,2022,3.241
+Food & Live Animals,2023,3.26
+Machinery & Transport Equipment,2000,62.52
+Machinery & Transport Equipment,2001,60.6346
+Machinery & Transport Equipment,2002,58.7492
+Machinery & Transport Equipment,2003,56.8638
+Machinery & Transport Equipment,2004,54.9785
+Machinery & Transport Equipment,2005,53.0931
+Machinery & Transport Equipment,2006,51.2077
+Machinery & Transport Equipment,2007,49.3223
+Machinery & Transport Equipment,2008,47.4369
+Machinery & Transport Equipment,2009,45.5515
+Machinery & Transport Equipment,2010,43.6662
+Machinery & Transport Equipment,2011,41.7808
+Machinery & Transport Equipment,2012,39.8954
+Machinery & Transport Equipment,2013,38.01
+Machinery & Transport Equipment,2014,38.768
+Machinery & Transport Equipment,2015,39.526
+Machinery & Transport Equipment,2016,40.284
+Machinery & Transport Equipment,2017,41.042
+Machinery & Transport Equipment,2018,41.8
+Machinery & Transport Equipment,2019,42.558
+Machinery & Transport Equipment,2020,43.316
+Machinery & Transport Equipment,2021,44.074
+Machinery & Transport Equipment,2022,44.832
+Machinery & Transport Equipment,2023,45.59
+Manufactured Goods,2000,6.91
+Manufactured Goods,2001,7.1015
+Manufactured Goods,2002,7.2931
+Manufactured Goods,2003,7.4846
+Manufactured Goods,2004,7.6762
+Manufactured Goods,2005,7.8677
+Manufactured Goods,2006,8.0592
+Manufactured Goods,2007,8.2508
+Manufactured Goods,2008,8.4423
+Manufactured Goods,2009,8.6338
+Manufactured Goods,2010,8.8254
+Manufactured Goods,2011,9.0169
+Manufactured Goods,2012,9.2085
+Manufactured Goods,2013,9.4
+Manufactured Goods,2014,9.355
+Manufactured Goods,2015,9.31
+Manufactured Goods,2016,9.265
+Manufactured Goods,2017,9.22
+Manufactured Goods,2018,9.175
+Manufactured Goods,2019,9.13
+Manufactured Goods,2020,9.085
+Manufactured Goods,2021,9.04
+Manufactured Goods,2022,8.995
+Manufactured Goods,2023,8.95
+Mineral Fuels & Petroleum,2000,9.62
+Mineral Fuels & Petroleum,2001,10.5931
+Mineral Fuels & Petroleum,2002,11.5662
+Mineral Fuels & Petroleum,2003,12.5392
+Mineral Fuels & Petroleum,2004,13.5123
+Mineral Fuels & Petroleum,2005,14.4854
+Mineral Fuels & Petroleum,2006,15.4585
+Mineral Fuels & Petroleum,2007,16.4315
+Mineral Fuels & Petroleum,2008,17.4046
+Mineral Fuels & Petroleum,2009,18.3777
+Mineral Fuels & Petroleum,2010,19.3508
+Mineral Fuels & Petroleum,2011,20.3238
+Mineral Fuels & Petroleum,2012,21.2969
+Mineral Fuels & Petroleum,2013,22.27
+Mineral Fuels & Petroleum,2014,21.698
+Mineral Fuels & Petroleum,2015,21.126
+Mineral Fuels & Petroleum,2016,20.554
+Mineral Fuels & Petroleum,2017,19.982
+Mineral Fuels & Petroleum,2018,19.41
+Mineral Fuels & Petroleum,2019,18.838
+Mineral Fuels & Petroleum,2020,18.266
+Mineral Fuels & Petroleum,2021,17.694
+Mineral Fuels & Petroleum,2022,17.122
+Mineral Fuels & Petroleum,2023,16.55
+Misc. Manufactured Articles,2000,8.02
+Misc. Manufactured Articles,2001,8.1223
+Misc. Manufactured Articles,2002,8.2246
+Misc. Manufactured Articles,2003,8.3269
+Misc. Manufactured Articles,2004,8.4292
+Misc. Manufactured Articles,2005,8.5315
+Misc. Manufactured Articles,2006,8.6338
+Misc. Manufactured Articles,2007,8.7362
+Misc. Manufactured Articles,2008,8.8385
+Misc. Manufactured Articles,2009,8.9408
+Misc. Manufactured Articles,2010,9.0431
+Misc. Manufactured Articles,2011,9.1454
+Misc. Manufactured Articles,2012,9.2477
+Misc. Manufactured Articles,2013,9.35
+Misc. Manufactured Articles,2014,9.423
+Misc. Manufactured Articles,2015,9.496
+Misc. Manufactured Articles,2016,9.569
+Misc. Manufactured Articles,2017,9.642
+Misc. Manufactured Articles,2018,9.715
+Misc. Manufactured Articles,2019,9.788
+Misc. Manufactured Articles,2020,9.861
+Misc. Manufactured Articles,2021,9.934
+Misc. Manufactured Articles,2022,10.007
+Misc. Manufactured Articles,2023,10.08
+Other Commodities,2000,0.83
+Other Commodities,2001,0.8162
+Other Commodities,2002,0.8023
+Other Commodities,2003,0.7885
+Other Commodities,2004,0.7746
+Other Commodities,2005,0.7608
+Other Commodities,2006,0.7469
+Other Commodities,2007,0.7331
+Other Commodities,2008,0.7192
+Other Commodities,2009,0.7054
+Other Commodities,2010,0.6915
+Other Commodities,2011,0.6777
+Other Commodities,2012,0.6638
+Other Commodities,2013,0.65
+Other Commodities,2014,0.643
+Other Commodities,2015,0.636
+Other Commodities,2016,0.629
+Other Commodities,2017,0.622
+Other Commodities,2018,0.615
+Other Commodities,2019,0.608
+Other Commodities,2020,0.601
+Other Commodities,2021,0.594
+Other Commodities,2022,0.587
+Other Commodities,2023,0.58
