@@ -1,103 +1,158 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Malaysia bilateral trade balance — East then West partners sorted by region then balance.",
+  "description": "Malaysia bilateral trade balance. Surplus = red, Deficit = dark. Sorted by region then balance.",
   "width": "container",
-  "height": { "step": 26 },
+  "height": {
+    "step": 28
+  },
   "config": {
     "font": "Inter, Segoe UI, sans-serif",
-    "view": { "stroke": null }
+    "view": {
+      "stroke": null
+    }
   },
-  "data": { "url": "data/malaysia_partner_balance.csv" },
+  "data": {
+    "url": "data/malaysia_partner_balance.csv"
+  },
   "layer": [
     {
       "mark": {
-        "type": "rule", "strokeWidth": 1,
-        "color": "#918980", "strokeDash": [3, 2]
+        "type": "rule",
+        "strokeWidth": 1,
+        "color": "#918980",
+        "strokeDash": [
+          3,
+          2
+        ]
       },
-      "encoding": { "x": { "datum": 0, "type": "quantitative" } }
+      "encoding": {
+        "x": {
+          "datum": 0,
+          "type": "quantitative"
+        }
+      }
     },
     {
-      "mark": { "type": "rule", "strokeWidth": 2.5 },
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 2.5
+      },
       "encoding": {
         "y": {
           "field": "partner",
           "type": "nominal",
-          "sort": { "field": "sort_order", "order": "ascending" },
-          "axis": { "title": null, "labelFontSize": 11, "labelLimit": 230 }
+          "sort": {
+            "field": "sort_order",
+            "order": "ascending"
+          },
+          "axis": {
+            "title": null,
+            "labelFontSize": 13,
+            "labelLimit": 230
+          }
         },
         "x": {
           "field": "balance_usd_bn",
           "type": "quantitative",
           "axis": {
-            "title": "Bilateral balance (USD billions)",
-            "titleFontSize": 11,
+            "title": "Bilateral trade balance (USD billions)",
+            "titleFontSize": 13,
+            "labelFontSize": 12,
             "grid": true,
             "gridColor": "#f0ede8"
           }
         },
-        "x2": { "datum": 0, "type": "quantitative" },
+        "x2": {
+          "datum": 0,
+          "type": "quantitative"
+        },
         "color": {
           "field": "direction",
           "type": "nominal",
           "scale": {
-            "domain": ["Surplus", "Deficit"],
-            "range": ["#1D9E75", "#D85A30"]
+            "domain": [
+              "Surplus",
+              "Deficit"
+            ],
+            "range": [
+              "#FB3640",
+              "#000F08"
+            ]
           },
           "legend": null
         }
       }
     },
     {
-      "mark": { "type": "point", "filled": true, "size": 90, "strokeWidth": 0 },
-      "encoding": {
-        "y": {
-          "field": "partner",
-          "type": "nominal",
-          "sort": { "field": "sort_order", "order": "ascending" }
-        },
-        "x": { "field": "balance_usd_bn", "type": "quantitative" },
-        "color": {
-          "field": "direction",
-          "type": "nominal",
-          "scale": {
-            "domain": ["Surplus", "Deficit"],
-            "range": ["#1D9E75", "#D85A30"]
-          },
-          "legend": {
-            "title": null,
-            "orient": "bottom-right",
-            "labelFontSize": 11
-          }
-        },
-        "tooltip": [
-          { "field": "partner",        "type": "nominal",      "title": "Partner" },
-          { "field": "region",         "type": "nominal",      "title": "Region" },
-          { "field": "exports_usd_bn", "type": "quantitative", "format": ".2f", "title": "Exports (USD bn)" },
-          { "field": "imports_usd_bn", "type": "quantitative", "format": ".2f", "title": "Imports (USD bn)" },
-          { "field": "balance_usd_bn", "type": "quantitative", "format": ".2f", "title": "Balance (USD bn)" }
-        ]
-      }
-    },
-    {
-      "transform": [
-        { "filter": "datum.partner === 'China' || datum.partner === 'United States'" }
-      ],
       "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 6,
-        "fontSize": 9.5,
-        "fontStyle": "italic",
-        "color": "#BA7517"
+        "type": "point",
+        "filled": true,
+        "size": 100,
+        "strokeWidth": 0
       },
       "encoding": {
         "y": {
           "field": "partner",
           "type": "nominal",
-          "sort": { "field": "sort_order", "order": "ascending" }
+          "sort": {
+            "field": "sort_order",
+            "order": "ascending"
+          }
         },
-        "x": { "field": "balance_usd_bn", "type": "quantitative" },
-        "text": { "field": "direction", "type": "nominal" }
+        "x": {
+          "field": "balance_usd_bn",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "direction",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Surplus",
+              "Deficit"
+            ],
+            "range": [
+              "#FB3640",
+              "#000F08"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom-right",
+            "labelFontSize": 13,
+            "symbolSize": 150
+          }
+        },
+        "tooltip": [
+          {
+            "field": "partner",
+            "type": "nominal",
+            "title": "Partner"
+          },
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "exports_usd_bn",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Exports (USD bn)"
+          },
+          {
+            "field": "imports_usd_bn",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Imports (USD bn)"
+          },
+          {
+            "field": "balance_usd_bn",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Balance (USD bn)"
+          }
+        ]
       }
     }
   ]
