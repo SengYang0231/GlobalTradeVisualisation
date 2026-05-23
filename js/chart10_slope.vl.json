@@ -1,107 +1,93 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Slope chart: Malaysia export category share 2000 vs 2013 vs 2023. Multi-select param controls visible lines.",
+  "description": "Malaysia export category share 2000-2023. Annual data. Dual-handle year slider + category multi-select.",
   "width": "container",
-  "height": 400,
-  "config": {
-    "font": "Inter, Segoe UI, sans-serif",
-    "view": { "stroke": null }
-  },
+  "height": 440,
+  "config": { "font": "Inter, Segoe UI, sans-serif", "view": { "stroke": null } },
   "params": [
     {
       "name": "selected_cats",
       "value": [
-        "Mineral Fuels & Petroleum",
-        "Misc. Manufactured Articles",
-        "Manufactured Goods",
-        "Chemicals",
-        "Animal & Vegetable Oils",
-        "Food & Live Animals"
+        "Mineral Fuels & Petroleum", "Misc. Manufactured Articles",
+        "Manufactured Goods", "Chemicals",
+        "Animal & Vegetable Oils", "Food & Live Animals"
       ]
-    }
+    },
+    { "name": "year_min", "value": 2000 },
+    { "name": "year_max", "value": 2023 }
   ],
   "data": { "url": "data/malaysia_export_mix_slope.csv" },
   "layer": [
     {
-      "mark": { "type": "line", "strokeWidth": 2.0 },
+      "transform": [
+        { "filter": "+datum.snapshot_year >= year_min && +datum.snapshot_year <= year_max" }
+      ],
+      "mark": { "type": "line", "strokeWidth": 2.0, "interpolate": "linear" },
       "encoding": {
         "x": {
-          "field": "snapshot_year", "type": "ordinal",
+          "field": "snapshot_year", "type": "quantitative",
+          "scale": { "zero": false },
           "axis": {
             "title": null,
-            "labelFontSize": 13,
-            "labelFontWeight": "bold"
+            "labelFontSize": 11,
+            "format": "d",
+            "tickMinStep": 1,
+            "tickCount": 24
           }
         },
         "y": {
           "field": "share_pct", "type": "quantitative",
           "axis": {
             "title": "Share of total exports (%)",
-            "titleFontSize": 13,
-            "labelFontSize": 12,
-            "grid": true,
-            "gridColor": "#f0ede8"
+            "titleFontSize": 13, "labelFontSize": 12,
+            "grid": true, "gridColor": "#f0ede8"
           }
         },
         "color": {
           "field": "section_label", "type": "nominal",
           "scale": {
             "domain": [
-              "Machinery & Transport Equipment",
-              "Mineral Fuels & Petroleum",
-              "Misc. Manufactured Articles",
-              "Manufactured Goods",
-              "Chemicals",
-              "Animal & Vegetable Oils",
-              "Food & Live Animals",
-              "Crude Materials",
-              "Other Commodities",
-              "Beverages & Tobacco"
+              "Machinery & Transport Equipment", "Mineral Fuels & Petroleum",
+              "Misc. Manufactured Articles", "Manufactured Goods", "Chemicals",
+              "Animal & Vegetable Oils", "Food & Live Animals",
+              "Crude Materials", "Other Commodities", "Beverages & Tobacco"
             ],
             "range": [
               "#0072B2","#E69F00","#56B4E9","#CC79A7","#A65628",
               "#4DAF4A","#377EB8","#984EA3","#FF7F00","#666666"
             ]
           },
-          "legend": {
-            "title": "Export category",
-            "orient": "right",
-            "labelFontSize": 12,
-            "titleFontSize": 12,
-            "symbolSize": 120,
-            "symbolStrokeWidth": 2.5,
-            "labelLimit": 220
-          }
+          "legend": null
         },
         "detail": { "field": "section_label", "type": "nominal" },
         "strokeOpacity": {
-          "condition": {
-            "test": "indexof(selected_cats, datum.section_label) >= 0",
-            "value": 0.85
-          },
-          "value": 0.06
+          "condition": { "test": "indexof(selected_cats, datum.section_label) >= 0", "value": 0.88 },
+          "value": 0.05
         }
       }
     },
     {
-      "mark": { "type": "point", "filled": true, "size": 65 },
+      "transform": [
+        { "filter": "+datum.snapshot_year >= year_min && +datum.snapshot_year <= year_max" }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 40,
+        "strokeWidth": 0.8,
+        "stroke": "#ffffff"
+      },
       "encoding": {
-        "x": { "field": "snapshot_year", "type": "ordinal" },
+        "x": { "field": "snapshot_year", "type": "quantitative", "scale": { "zero": false } },
         "y": { "field": "share_pct", "type": "quantitative" },
         "color": {
           "field": "section_label", "type": "nominal",
           "scale": {
             "domain": [
-              "Machinery & Transport Equipment",
-              "Mineral Fuels & Petroleum",
-              "Misc. Manufactured Articles",
-              "Manufactured Goods",
-              "Chemicals",
-              "Animal & Vegetable Oils",
-              "Food & Live Animals",
-              "Crude Materials",
-              "Other Commodities",
-              "Beverages & Tobacco"
+              "Machinery & Transport Equipment", "Mineral Fuels & Petroleum",
+              "Misc. Manufactured Articles", "Manufactured Goods", "Chemicals",
+              "Animal & Vegetable Oils", "Food & Live Animals",
+              "Crude Materials", "Other Commodities", "Beverages & Tobacco"
             ],
             "range": [
               "#0072B2","#E69F00","#56B4E9","#CC79A7","#A65628",
@@ -111,35 +97,14 @@
           "legend": null
         },
         "opacity": {
-          "condition": {
-            "test": "indexof(selected_cats, datum.section_label) >= 0",
-            "value": 0.9
-          },
-          "value": 0.06
+          "condition": { "test": "indexof(selected_cats, datum.section_label) >= 0", "value": 1 },
+          "value": 0.05
         },
         "tooltip": [
           { "field": "section_label", "type": "nominal",      "title": "Category" },
-          { "field": "snapshot_year", "type": "ordinal",      "title": "Year" },
+          { "field": "snapshot_year", "type": "quantitative", "format": "d", "title": "Year" },
           { "field": "share_pct",     "type": "quantitative", "format": ".1f", "title": "Share (%)" }
         ]
-      }
-    },
-    {
-      "data": {
-        "values": [{ "x": "2000", "y": 30 }]
-      },
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "fontSize": 11,
-        "fontStyle": "italic",
-        "color": "#0072B2",
-        "opacity": 0.6,
-        "text": "Machinery & Transport: 63% → 38% → 46%  (select from menu to show)"
-      },
-      "encoding": {
-        "x": { "field": "x", "type": "ordinal" },
-        "y": { "field": "y", "type": "quantitative" }
       }
     }
   ]
