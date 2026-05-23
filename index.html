@@ -127,12 +127,53 @@
     <div class="chart-block full">
       <h2 class="chart-title">Malaysia's trade web — flows to its top partners</h2>
       <div id="chart6" class="chart-embed" style="height:460px"></div>
-      <p class="chart-caption">
-        Arc thickness represents trade volume (USD billions, 2023).
-        Darker arcs indicate export-heavy relationships;
-        lighter arcs indicate import-heavy ones.
-      </p>
+      <div style="display:flex; align-items:flex-start; gap:24px; margin-top:10px;">
+        <p class="chart-caption" style="margin:0; flex:1;">
+          Arc thickness represents trade volume (USD billions, 2023).
+          Red arcs indicate export-heavy relationships (Malaysia exports more);
+          dark arcs indicate import-heavy ones (Malaysia imports more).
+        </p>
+        <div style="flex-shrink:0; display:flex; flex-direction:column; gap:5px;">
+          <label for="chart6-select" style="font-size:12px; color:#5F5E5A; font-weight:500;">Select trading partner</label>
+          <select id="chart6-select" style="font-size:13px; padding:5px 10px; border:1px solid #ccc; border-radius:4px; background:#fff; cursor:pointer; min-width:160px;">
+            <option value="Australia">Australia</option>
+            <option value="China" selected>China</option>
+            <option value="Germany">Germany</option>
+            <option value="Hong Kong, China">Hong Kong, China</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Japan">Japan</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Taiwan">Taiwan</option>
+            <option value="Thailand">Thailand</option>
+            <option value="United States">United States</option>
+            <option value="Vietnam">Vietnam</option>
+          </select>
+        </div>
+      </div>
     </div>
+    <script>
+      /* Chart 6 embedded here (not in charts.js) so we can capture the view
+         reference and wire the dropdown to the selected_partner signal. */
+      vegaEmbed('#chart6', 'js/chart6_arc_map.vl.json', { actions: false, renderer: 'svg' })
+        .then(function(result) {
+          var view = result.view;
+          var select = document.getElementById('chart6-select');
+          /* Sync on dropdown change */
+          select.addEventListener('change', function() {
+            view.signal('selected_partner', this.value).run();
+          });
+          /* Ensure Vega signal matches the HTML default on first load */
+          view.signal('selected_partner', select.value).run();
+        })
+        .catch(function(err) {
+          console.error('Chart 6 failed:', err);
+          document.getElementById('chart6').innerHTML =
+            '<p style="color:#D85A30;padding:16px;font-size:13px;">Could not load chart6: ' + err.message + '</p>';
+        });
+    </script>
 
     <div class="chart-row cols-2">
       <div class="chart-block">
