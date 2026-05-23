@@ -1,69 +1,163 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Treemap — Malaysia export composition. y coords pre-flipped in Python. Pure Vega-Lite rect + text.",
+  "description": "Treemap \u2014 Malaysia export composition. No duplicate labels. Blue/purple/yellow sector colours.",
   "width": "container",
   "height": 400,
   "config": {
     "font": "Inter, Segoe UI, sans-serif",
-    "view": { "stroke": null }
+    "view": {
+      "stroke": null
+    }
   },
-  "data": { "url": "data/malaysia_treemap_coords.csv" },
+  "data": {
+    "url": "data/malaysia_treemap_coords.csv"
+  },
   "layer": [
     {
       "mark": {
         "type": "rect",
         "stroke": "#ffffff",
         "strokeWidth": 1.5,
-        "opacity": 0.85
+        "opacity": 0.88
       },
       "encoding": {
-        "x":  { "field": "x0", "type": "quantitative", "scale": { "domain": [0, 500] }, "axis": null },
-        "x2": { "field": "x1", "type": "quantitative" },
-        "y":  { "field": "y0", "type": "quantitative", "scale": { "domain": [0, 400] }, "axis": null },
-        "y2": { "field": "y1", "type": "quantitative" },
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": null
+        },
+        "x2": {
+          "field": "x1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y0",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          },
+          "axis": null
+        },
+        "y2": {
+          "field": "y1",
+          "type": "quantitative"
+        },
         "color": {
           "field": "sector",
           "type": "nominal",
           "scale": {
-            "domain": ["Manufacturing", "Energy & Mining", "Agriculture & Food"],
-            "range":  ["#534AB7",       "#D85A30",         "#1D9E75"]
+            "domain": [
+              "Manufacturing",
+              "Energy & Mining",
+              "Agriculture & Food"
+            ],
+            "range": [
+              "#2166AC",
+              "#8B2FC9",
+              "#C8A200"
+            ]
           },
           "legend": {
             "title": "Sector",
             "orient": "bottom",
-            "labelFontSize": 11,
-            "symbolSize": 120
+            "labelFontSize": 13,
+            "titleFontSize": 12,
+            "symbolSize": 160
           }
         },
         "tooltip": [
-          { "field": "sub_sector",          "type": "nominal",      "title": "Product" },
-          { "field": "sector",              "type": "nominal",      "title": "Sector" },
-          { "field": "value_rm_mil",        "type": "quantitative", "format": ",.1f", "title": "Value (RM mil)" },
-          { "field": "share_total_pct",     "type": "quantitative", "format": ".1f",  "title": "Share of exports (%)" },
-          { "field": "share_in_sector_pct", "type": "quantitative", "format": ".1f",  "title": "Share within sector (%)" }
+          {
+            "field": "sub_sector",
+            "type": "nominal",
+            "title": "Product"
+          },
+          {
+            "field": "sector",
+            "type": "nominal",
+            "title": "Sector"
+          },
+          {
+            "field": "value_rm_mil",
+            "type": "quantitative",
+            "format": ",.1f",
+            "title": "Value (RM mil)"
+          },
+          {
+            "field": "share_total_pct",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Share of exports (%)"
+          },
+          {
+            "field": "share_in_sector_pct",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Share within sector (%)"
+          }
         ]
       }
     },
     {
-      "transform": [ { "filter": "datum.w >= 55 && datum.h >= 18" } ],
+      "transform": [
+        {
+          "filter": "datum.w >= 55 && datum.h >= 22 && (datum.w < 130 || datum.h < 35)"
+        }
+      ],
       "mark": {
         "type": "text",
         "baseline": "middle",
         "align": "center",
-        "fontSize": 9,
+        "fontSize": 11,
         "fontWeight": "normal",
         "color": "#ffffff",
         "opacity": 1,
-        "limit": 100
+        "limit": 110,
+        "dy": -7
       },
       "encoding": {
-        "x":  { "field": "cx", "type": "quantitative", "scale": { "domain": [0, 500] }, "axis": null },
-        "y":  { "field": "cy", "type": "quantitative", "scale": { "domain": [0, 400] }, "axis": null },
-        "text": { "field": "sub_sector", "type": "nominal" }
+        "x": {
+          "field": "cx",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "cy",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "short_name",
+          "type": "nominal"
+        }
       }
     },
     {
-      "transform": [ { "filter": "datum.w >= 120 && datum.h >= 30" } ],
+      "transform": [
+        {
+          "filter": "datum.w >= 55 && datum.h >= 22 && (datum.w < 130 || datum.h < 35)"
+        }
+      ],
       "mark": {
         "type": "text",
         "baseline": "middle",
@@ -71,14 +165,129 @@
         "fontSize": 11,
         "fontWeight": "bold",
         "color": "#ffffff",
-        "opacity": 1,
-        "limit": 160,
-        "dy": 12
+        "opacity": 0.9,
+        "dy": 7
       },
       "encoding": {
-        "x":  { "field": "cx", "type": "quantitative", "scale": { "domain": [0, 500] }, "axis": null },
-        "y":  { "field": "cy", "type": "quantitative", "scale": { "domain": [0, 400] }, "axis": null },
-        "text": { "field": "sub_sector", "type": "nominal" }
+        "x": {
+          "field": "cx",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "cy",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "share_total_pct",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.w >= 130 && datum.h >= 35"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "center",
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#ffffff",
+        "opacity": 1,
+        "limit": 180,
+        "dy": -10
+      },
+      "encoding": {
+        "x": {
+          "field": "cx",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "cy",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "short_name",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.w >= 130 && datum.h >= 35"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "center",
+        "fontSize": 13,
+        "fontWeight": "normal",
+        "color": "#ffffff",
+        "opacity": 0.9,
+        "dy": 10
+      },
+      "encoding": {
+        "x": {
+          "field": "cx",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "cy",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "share_total_pct",
+          "type": "quantitative",
+          "format": ".1f"
+        }
       }
     }
   ]
