@@ -218,12 +218,53 @@
       <div class="chart-block">
         <h2 class="chart-title">A shifting basket — how Malaysia's exports changed from 2000 to 2023</h2>
         <div id="chart10" class="chart-embed" style="height:420px"></div>
-        <p class="chart-caption">
-          Machinery's share fell from 63% to 46%, while petroleum
-          nearly doubled — a structural shift over two decades.
-        </p>
+        <div style="display:flex; align-items:flex-start; gap:24px; margin-top:10px;">
+          <p class="chart-caption" style="margin:0; flex:1;">
+            Machinery's share fell from 63% to 46%, while petroleum
+            nearly doubled — a structural shift over two decades.
+          </p>
+          <div style="flex-shrink:0; display:flex; flex-direction:column; gap:5px;">
+            <label for="chart10-select" style="font-size:12px; color:#5F5E5A; font-weight:500;">
+              Select categories &nbsp;<span style="font-weight:400; color:#999;">(Ctrl/Cmd + click for multiple)</span>
+            </label>
+            <select id="chart10-select" multiple size="7"
+              style="font-size:12px; padding:4px 8px; border:1px solid #ccc; border-radius:4px; background:#fff; cursor:pointer; min-width:220px; line-height:1.6;">
+              <option value="Machinery &amp; Transport Equipment">Machinery &amp; Transport Equipment</option>
+              <option value="Mineral Fuels &amp; Petroleum" selected>Mineral Fuels &amp; Petroleum</option>
+              <option value="Misc. Manufactured Articles" selected>Misc. Manufactured Articles</option>
+              <option value="Manufactured Goods" selected>Manufactured Goods</option>
+              <option value="Chemicals" selected>Chemicals</option>
+              <option value="Animal &amp; Vegetable Oils" selected>Animal &amp; Vegetable Oils</option>
+              <option value="Food &amp; Live Animals" selected>Food &amp; Live Animals</option>
+              <option value="Crude Materials">Crude Materials</option>
+              <option value="Other Commodities">Other Commodities</option>
+              <option value="Beverages &amp; Tobacco">Beverages &amp; Tobacco</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script>
+      vegaEmbed('#chart10', 'js/chart10_slope.vl.json', { actions: false, renderer: 'svg' })
+        .then(function(result) {
+          var view = result.view;
+          var select = document.getElementById('chart10-select');
+          function getSelected() {
+            return Array.from(select.selectedOptions).map(function(o) { return o.value; });
+          }
+          select.addEventListener('change', function() {
+            view.signal('selected_cats', getSelected()).run();
+          });
+          /* Sync initial state */
+          view.signal('selected_cats', getSelected()).run();
+        })
+        .catch(function(err) {
+          console.error('Chart 10 failed:', err);
+          document.getElementById('chart10').innerHTML =
+            '<p style="color:#D85A30;padding:16px;font-size:13px;">Could not load chart10: ' + err.message + '</p>';
+        });
+    </script>
 
     <div class="chart-block full">
       <h2 class="chart-title">Two decades of exports — the rise and fall of each sector</h2>
