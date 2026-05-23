@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Malaysia exports by SITC section 2000-2023. Stacked area chart.",
+  "description": "Malaysia exports by SITC section 2000-2023. Stacked area chart. Colours match chart 10.",
   "width": "container",
   "height": 360,
   "config": {
@@ -8,7 +8,7 @@
     "view": { "stroke": null }
   },
   "data": { "url": "data/malaysia_exports_by_sitc_annual.csv" },
-  "mark": { "type": "area", "opacity": 0.9 },
+  "mark": { "type": "area", "opacity": 0.88 },
   "encoding": {
     "x": {
       "field": "year",
@@ -16,6 +16,7 @@
       "axis": {
         "title": null,
         "labelAngle": 0,
+        "labelFontSize": 12,
         "labelExpr": "datum.value % 5 === 0 ? datum.label : ''"
       }
     },
@@ -25,7 +26,8 @@
       "stack": "zero",
       "axis": {
         "title": "Exports (RM billions)",
-        "titleFontSize": 11,
+        "titleFontSize": 13,
+        "labelFontSize": 12,
         "grid": true,
         "gridColor": "#f0ede8"
       }
@@ -47,16 +49,25 @@
           "Beverages & Tobacco"
         ],
         "range": [
-          "#534AB7", "#D85A30", "#1D9E75", "#BA7517",
-          "#185FA5", "#9b59b6", "#B4B2A9", "#7f8c8d",
-          "#e67e22", "#2ecc71"
+          "#0072B2",
+          "#E69F00",
+          "#56B4E9",
+          "#CC79A7",
+          "#A65628",
+          "#4DAF4A",
+          "#377EB8",
+          "#984EA3",
+          "#FF7F00",
+          "#666666"
         ]
       },
       "legend": {
         "title": "Export category",
+        "titleFontSize": 12,
         "orient": "right",
-        "labelFontSize": 11,
-        "labelLimit": 220
+        "labelFontSize": 12,
+        "labelLimit": 220,
+        "symbolSize": 150
       }
     },
     "tooltip": [
