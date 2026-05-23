@@ -206,29 +206,38 @@
       reflecting Malaysia's evolving industrial structure.
     </p>
 
-    <div class="chart-row cols-2">
-      <div class="chart-block">
-        <h2 class="chart-title">Electronics dominate — Malaysia's export basket in 2024</h2>
-        <div id="chart9" class="chart-embed" style="height:420px"></div>
-        <p class="chart-caption">
-          Electrical and electronic products account for nearly
-          half of all Malaysian merchandise exports.
+    <!-- Chart 9: full width -->
+    <div class="chart-block full">
+      <h2 class="chart-title">Electronics dominate — Malaysia's export basket in 2024</h2>
+      <div id="chart9" class="chart-embed" style="height:440px"></div>
+      <p class="chart-caption">
+        Electrical and electronic products account for nearly
+        half of all Malaysian merchandise exports.
+      </p>
+    </div>
+
+    <!-- Chart 10: full width -->
+    <div class="chart-block full">
+      <h2 class="chart-title">A shifting basket — how Malaysia's exports changed from 2000 to 2023</h2>
+      <div id="chart10" class="chart-embed" style="height:440px"></div>
+
+      <div style="display:flex;align-items:flex-start;gap:20px;margin-top:12px;flex-wrap:wrap;">
+
+        <!-- Caption -->
+        <p class="chart-caption" style="margin:0;flex:1;min-width:180px;">
+          Machinery's share fell from 63% to 46%, while petroleum
+          nearly doubled — a structural shift over two decades.
+          Use the controls to filter categories and adjust the year range.
         </p>
-      </div>
-      <div class="chart-block">
-        <h2 class="chart-title">A shifting basket — how Malaysia's exports changed from 2000 to 2023</h2>
-        <div id="chart10" class="chart-embed" style="height:420px"></div>
-        <div style="display:flex; align-items:flex-start; gap:24px; margin-top:10px;">
-          <p class="chart-caption" style="margin:0; flex:1;">
-            Machinery's share fell from 63% to 46%, while petroleum
-            nearly doubled — a structural shift over two decades.
-          </p>
-          <div style="flex-shrink:0; display:flex; flex-direction:column; gap:5px;">
-            <label for="chart10-select" style="font-size:12px; color:#5F5E5A; font-weight:500;">
-              Select categories &nbsp;<span style="font-weight:400; color:#999;">(Ctrl/Cmd + click for multiple)</span>
+
+        <!-- Category select + year range slider -->
+        <div style="flex-shrink:0;display:flex;flex-direction:column;gap:8px;min-width:200px;">
+          <div>
+            <label for="chart10-select" style="font-size:12px;color:#5F5E5A;font-weight:500;display:block;margin-bottom:3px;">
+              Categories &nbsp;<span style="font-weight:400;color:#999;">(Ctrl/Cmd+click)</span>
             </label>
-            <select id="chart10-select" multiple size="7"
-              style="font-size:12px; padding:4px 8px; border:1px solid #ccc; border-radius:4px; background:#fff; cursor:pointer; min-width:220px; line-height:1.6;">
+            <select id="chart10-select" multiple size="6"
+              style="font-size:12px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;background:#fff;cursor:pointer;width:100%;line-height:1.6;">
               <option value="Machinery &amp; Transport Equipment">Machinery &amp; Transport Equipment</option>
               <option value="Mineral Fuels &amp; Petroleum" selected>Mineral Fuels &amp; Petroleum</option>
               <option value="Misc. Manufactured Articles" selected>Misc. Manufactured Articles</option>
@@ -241,29 +250,126 @@
               <option value="Beverages &amp; Tobacco">Beverages &amp; Tobacco</option>
             </select>
           </div>
+
+          <div>
+            <label style="font-size:12px;color:#5F5E5A;font-weight:500;display:block;margin-bottom:6px;">Year range</label>
+            <!-- Pure-JS dual-handle slider — no range inputs, drag events only -->
+            <div id="yr-slider" style="position:relative;width:220px;padding:10px 0;cursor:default;user-select:none;">
+              <!-- Full grey track -->
+              <div id="yr-track" style="position:relative;height:5px;background:#ddd;border-radius:3px;">
+                <!-- Blue fill between handles -->
+                <div id="yr-fill" style="position:absolute;height:5px;background:#0072B2;border-radius:3px;left:0%;width:100%;pointer-events:none;"></div>
+                <!-- Min handle -->
+                <div id="yr-thumb-lo" style="position:absolute;width:16px;height:16px;background:#0072B2;border:2px solid #fff;border-radius:50%;top:-6px;left:0%;transform:translateX(-50%);cursor:grab;box-shadow:0 1px 4px rgba(0,0,0,0.3);z-index:2;"></div>
+                <!-- Max handle -->
+                <div id="yr-thumb-hi" style="position:absolute;width:16px;height:16px;background:#0072B2;border:2px solid #fff;border-radius:50%;top:-6px;left:100%;transform:translateX(-50%);cursor:grab;box-shadow:0 1px 4px rgba(0,0,0,0.3);z-index:2;"></div>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:500;color:#333;width:220px;">
+              <span id="yr-lbl-lo">2000</span>
+              <span id="yr-lbl-hi">2023</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Legend -->
+        <div style="flex-shrink:0;display:flex;flex-direction:column;gap:5px;min-width:180px;">
+          <span style="font-size:12px;color:#5F5E5A;font-weight:500;margin-bottom:2px;">Export category</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#0072B2;border-radius:2px;flex-shrink:0;"></span>Machinery &amp; Transport Equipment</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#E69F00;border-radius:2px;flex-shrink:0;"></span>Mineral Fuels &amp; Petroleum</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#56B4E9;border-radius:2px;flex-shrink:0;"></span>Misc. Manufactured Articles</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#CC79A7;border-radius:2px;flex-shrink:0;"></span>Manufactured Goods</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#A65628;border-radius:2px;flex-shrink:0;"></span>Chemicals</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#4DAF4A;border-radius:2px;flex-shrink:0;"></span>Animal &amp; Vegetable Oils</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#377EB8;border-radius:2px;flex-shrink:0;"></span>Food &amp; Live Animals</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#984EA3;border-radius:2px;flex-shrink:0;"></span>Crude Materials</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#FF7F00;border-radius:2px;flex-shrink:0;"></span>Other Commodities</span>
+          <span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#333;white-space:nowrap;"><span style="display:inline-block;width:22px;height:3px;background:#666666;border-radius:2px;flex-shrink:0;"></span>Beverages &amp; Tobacco</span>
+        </div>
+
       </div>
     </div>
 
     <script>
-      vegaEmbed('#chart10', 'js/chart10_slope.vl.json', { actions: false, renderer: 'svg' })
-        .then(function(result) {
-          var view = result.view;
-          var select = document.getElementById('chart10-select');
-          function getSelected() {
-            return Array.from(select.selectedOptions).map(function(o) { return o.value; });
-          }
-          select.addEventListener('change', function() {
-            view.signal('selected_cats', getSelected()).run();
-          });
-          /* Sync initial state */
-          view.signal('selected_cats', getSelected()).run();
+    (function () {
+      var YR_A = 2000, YR_Z = 2023, RANGE = YR_Z - YR_A;
+      var lo = YR_A, hi = YR_Z;
+      var dragging = null;
+
+      var track   = document.getElementById('yr-track');
+      var fill    = document.getElementById('yr-fill');
+      var thumbLo = document.getElementById('yr-thumb-lo');
+      var thumbHi = document.getElementById('yr-thumb-hi');
+      var lblLo   = document.getElementById('yr-lbl-lo');
+      var lblHi   = document.getElementById('yr-lbl-hi');
+      var catSel  = document.getElementById('chart10-select');
+
+      function pct(yr)  { return (yr - YR_A) / RANGE; }
+      function yr(p)    { return Math.round(YR_A + Math.max(0, Math.min(1, p)) * RANGE); }
+      function xFromEvent(e) {
+        var r = track.getBoundingClientRect();
+        return (e.clientX - r.left) / r.width;
+      }
+
+      function redraw() {
+        var loPct = pct(lo) * 100 + '%';
+        var hiPct = pct(hi) * 100 + '%';
+        thumbLo.style.left = loPct;
+        thumbHi.style.left = hiPct;
+        fill.style.left    = loPct;
+        fill.style.width   = ((pct(hi) - pct(lo)) * 100) + '%';
+        lblLo.textContent  = lo;
+        lblHi.textContent  = hi;
+      }
+
+      function syncVega() {
+        if (window._c10view) {
+          window._c10view
+            .signal('year_min', lo)
+            .signal('year_max', hi)
+            .run();
+        }
+      }
+
+      function getSelectedCats() {
+        return Array.from(catSel.selectedOptions).map(function(o){ return o.value; });
+      }
+
+      thumbLo.addEventListener('mousedown', function(e){ dragging='lo'; e.preventDefault(); });
+      thumbHi.addEventListener('mousedown', function(e){ dragging='hi'; e.preventDefault(); });
+
+      document.addEventListener('mousemove', function(e){
+        if (!dragging) return;
+        var v = yr(xFromEvent(e));
+        if (dragging === 'lo') lo = Math.min(v, hi);
+        else                   hi = Math.max(v, lo);
+        redraw();
+        syncVega();
+      });
+      document.addEventListener('mouseup', function(){ dragging = null; });
+
+      catSel.addEventListener('change', function(){
+        if (window._c10view)
+          window._c10view.signal('selected_cats', getSelectedCats()).run();
+      });
+
+      vegaEmbed('#chart10', 'js/chart10_slope.vl.json', { actions:false, renderer:'svg' })
+        .then(function(result){
+          window._c10view = result.view;
+          result.view
+            .signal('selected_cats', getSelectedCats())
+            .signal('year_min', lo)
+            .signal('year_max', hi)
+            .run();
         })
-        .catch(function(err) {
+        .catch(function(err){
           console.error('Chart 10 failed:', err);
           document.getElementById('chart10').innerHTML =
-            '<p style="color:#D85A30;padding:16px;font-size:13px;">Could not load chart10: ' + err.message + '</p>';
+            '<p style="color:#D85A30;padding:16px;font-size:13px;">Could not load chart10: '+err.message+'</p>';
         });
+
+      redraw(); // Initial visual
+    })();
     </script>
 
     <div class="chart-block full">
