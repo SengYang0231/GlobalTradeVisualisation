@@ -175,14 +175,47 @@
         });
     </script>
 
+    <script>
+      /* Chart 7: ranked bar — inline embed so year slider can signal the view */
+      vegaEmbed('#chart7', 'js/chart7_bump.vl.json', { actions: false, renderer: 'svg' })
+        .then(function(result) {
+          var view   = result.view;
+          var slider = document.getElementById('chart7-slider');
+          var lbl    = document.getElementById('chart7-year-lbl');
+          slider.addEventListener('input', function() {
+            lbl.textContent = this.value;
+            view.signal('year_select', parseInt(this.value, 10)).run();
+          });
+          view.signal('year_select', parseInt(slider.value, 10)).run();
+        })
+        .catch(function(err) {
+          console.error('Chart 7 failed:', err);
+          document.getElementById('chart7').innerHTML =
+            '<p style="color:#D85A30;padding:16px;font-size:13px;">Could not load chart7: ' + err.message + '</p>';
+        });
+    </script>
+
     <div class="chart-row cols-2">
       <div class="chart-block">
-        <h2 class="chart-title">China rises, Japan falls — partner rankings shift over two decades</h2>
+        <h2 class="chart-title">Malaysia's top trading partners — who leads by year?</h2>
         <div id="chart7" class="chart-embed" style="height:360px"></div>
-        <p class="chart-caption">
-          China overtook the United States as Malaysia's top
-          trading partner around 2010 and has stayed there since.
-        </p>
+        <div style="display:flex; align-items:center; gap:20px; margin-top:10px; flex-wrap:wrap;">
+          <p class="chart-caption" style="margin:0; flex:1; border-top:none; padding-top:0;">
+            China has led since 2010, overtaking the United States.
+            Drag the slider to explore how rankings shifted year by year.
+          </p>
+          <div style="flex-shrink:0; display:flex; flex-direction:column; gap:4px; min-width:160px;">
+            <label style="font-size:12px; color:#5F5E5A; font-weight:500; display:flex; justify-content:space-between;">
+              <span>Year</span>
+              <span id="chart7-year-lbl" style="font-weight:700; color:#1A1209;">2023</span>
+            </label>
+            <input id="chart7-slider" type="range" min="2000" max="2023" value="2023" step="1"
+              style="width:100%; cursor:pointer; accent-color:#E69F00;">
+            <div style="display:flex; justify-content:space-between; font-size:10px; color:#918980;">
+              <span>2000</span><span>2023</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="chart-block">
         <h2 class="chart-title">Surplus with the West, deficit with the East</h2>
@@ -376,9 +409,9 @@
       <h2 class="chart-title">Two decades of exports — the rise and fall of each sector</h2>
       <div id="chart11" class="chart-embed" style="height:380px"></div>
       <p class="chart-caption">
-        Machinery and transport equipment (blue) has dominated throughout.
-        Mineral fuels (amber) surged during the 2000s commodity boom before receding.
-        Animal and vegetable oils — palm oil (green) — remain a steady contributor.
+        Machinery and transport equipment has dominated throughout.
+        Petroleum surged during the 2000s commodity boom
+        before receding. Animal and vegetable oils (palm oil) remain steady.
       </p>
     </div>
   </section>
