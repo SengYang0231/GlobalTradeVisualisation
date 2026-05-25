@@ -13,7 +13,7 @@ const SPECS = [
   { id: "chart4",  file: "js/chart4_area.vl.json"          },
   { id: "chart5",  file: "js/chart5_lollipop.vl.json"      },
   /*{ id: "chart6",  file: "js/chart6_arc_map.vl.json"       },*/
-  { id: "chart7",  file: "js/chart7_bump.vl.json"          },
+  /*{ id: "chart7",  file: "js/chart7_bump.vl.json"          },*/
   { id: "chart8",  file: "js/chart8_dotplot.vl.json"       },
   { id: "chart9",  file: "js/chart9_treemap.vl.json"       },
   /*{ id: "chart10", file: "js/chart10_slope.vl.json"        },*/
