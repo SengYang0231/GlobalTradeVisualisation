@@ -39,7 +39,7 @@
       },
       "encoding": {
         "y": {
-          "field": "partner",
+          "field": "short_label",
           "type": "nominal",
           "sort": {
             "field": "sort_order",
@@ -92,7 +92,7 @@
       },
       "encoding": {
         "y": {
-          "field": "partner",
+          "field": "short_label",
           "type": "nominal",
           "sort": {
             "field": "sort_order",
@@ -154,6 +154,12 @@
           }
         ]
       }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.partner === 'Middle East, North Africa, Afghanistan & Pakistan' ? 'Middle East & N. Africa' : datum.partner",
+      "as": "short_label"
     }
   ]
 }
