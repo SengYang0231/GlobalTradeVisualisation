@@ -58,11 +58,12 @@
 
     <div class="chart-row cols-2">
       <div class="chart-block">
-        <h2 class="chart-title">Top trading economies — where does Malaysia rank?</h2>
+        <h2 class="chart-title">Malaysia is open — but small economies trade even more</h2>
         <div id="chart2" class="chart-embed" style="height:340px"></div>
         <p class="chart-caption">
-          Malaysia ranks among the world's most trade-open economies.
-          Its trade-to-GDP ratio far exceeds most comparable nations.
+          Malaysia's trade-to-GDP ratio (146%) is high by global standards,
+          but small, highly open economies like Hong Kong, Belgium and Slovakia
+          trade even more relative to their size.
         </p>
       </div>
       <div class="chart-block">
@@ -184,9 +185,9 @@
           var lbl    = document.getElementById('chart7-year-lbl');
           slider.addEventListener('input', function() {
             lbl.textContent = this.value;
-            view.signal('year_select', parseInt(this.value, 10)).run();
+            view.signal('year_select', +this.value).run();
           });
-          view.signal('year_select', parseInt(slider.value, 10)).run();
+          view.signal('year_select', +slider.value).run();
         })
         .catch(function(err) {
           console.error('Chart 7 failed:', err);
