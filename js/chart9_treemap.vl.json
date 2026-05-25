@@ -109,19 +109,19 @@
     {
       "transform": [
         {
-          "filter": "datum.w >= 55 && datum.h >= 22 && (datum.w < 130 || datum.h < 35)"
+          "filter": "datum.w >= 40 && datum.h >= 16 && (datum.w < 130 || datum.h < 35)"
         }
       ],
       "mark": {
         "type": "text",
         "baseline": "middle",
         "align": "center",
-        "fontSize": 11,
+        "fontSize": 10,
         "fontWeight": "normal",
         "color": "#ffffff",
         "opacity": 1,
         "limit": 110,
-        "dy": -7
+        "dy": -6
       },
       "encoding": {
         "x": {
@@ -155,18 +155,18 @@
     {
       "transform": [
         {
-          "filter": "datum.w >= 55 && datum.h >= 22 && (datum.w < 130 || datum.h < 35)"
+          "filter": "datum.w >= 40 && datum.h >= 16 && (datum.w < 130 || datum.h < 35)"
         }
       ],
       "mark": {
         "type": "text",
         "baseline": "middle",
         "align": "center",
-        "fontSize": 11,
+        "fontSize": 10,
         "fontWeight": "bold",
         "color": "#ffffff",
         "opacity": 0.9,
-        "dy": 7
+        "dy": 6
       },
       "encoding": {
         "x": {
@@ -192,9 +192,8 @@
           "axis": null
         },
         "text": {
-          "field": "share_total_pct",
-          "type": "quantitative",
-          "format": ".1f"
+          "field": "pct_label",
+          "type": "nominal"
         }
       }
     },
@@ -284,11 +283,103 @@
           "axis": null
         },
         "text": {
-          "field": "share_total_pct",
-          "type": "quantitative",
-          "format": ".1f"
+          "field": "pct_label",
+          "type": "nominal"
         }
       }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.w >= 28 && datum.h >= 12 && (datum.w < 40 || datum.h < 16)"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "center",
+        "fontSize": 9,
+        "fontWeight": "normal",
+        "color": "#ffffff",
+        "opacity": 0.85
+      },
+      "encoding": {
+        "x": {
+          "field": "cx",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "cy",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "pct_label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.w >= 28 && datum.h >= 12 && (datum.w < 40 || datum.h < 16)"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "align": "center",
+        "fontSize": 9,
+        "color": "#ffffff",
+        "opacity": 0.85
+      },
+      "encoding": {
+        "x": {
+          "field": "cx",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "cy",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              400
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "pct_label",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "format(datum.share_total_pct, '.1f') + '%'",
+      "as": "pct_label"
     }
   ]
 }
