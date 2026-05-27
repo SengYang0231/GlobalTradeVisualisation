@@ -12,28 +12,88 @@
 <body>
 <div class="page-wrapper">
 
-  <header class="page-header">
-    <div class="header-tag">FIT2179 Data Visualisation &nbsp;·&nbsp; 2026</div>
-    <h1 class="page-title">Global Trade: Malaysia &amp; the World</h1>
-    <p class="page-subtitle">
-      How does Malaysia fit into the global trading picture?
-      Explore three decades of trade flows, key partners,
-      and the products Malaysia sells to the world.
-    </p>
-    <div class="legend-global">
-      <span class="legend-item">
-        <span class="legend-dot" style="background:#FB3640"></span>Exports / surplus
-      </span>
-      <span class="legend-item">
-        <span class="legend-dot" style="background:#000F08"></span>Imports / deficit
-      </span>
-      <span class="legend-item">
-        <span class="legend-dot" style="background:#EF9F27"></span>Malaysia
-      </span>
-      <span class="legend-item">
-        <span class="legend-dot" style="background:#B4B2A9"></span>Other countries
-      </span>
+  <header class="page-header" style="display:flex; flex-direction:row; align-items:center; gap:48px;">
+
+    <!-- Left: title + subtitle + legend -->
+    <div style="flex:1; min-width:0;">
+      <div class="header-tag">FIT2179 Data Visualisation &nbsp;·&nbsp; 2026</div>
+      <h1 class="page-title">Global Trade: Malaysia &amp; the World</h1>
+      <p class="page-subtitle">
+        How does Malaysia fit into the global trading picture?
+        Explore three decades of trade flows, key partners,
+        and the products Malaysia sells to the world.
+      </p>
+      <div class="legend-global">
+        <span class="legend-item">
+          <span class="legend-dot" style="background:#FB3640"></span>Exports / surplus
+        </span>
+        <span class="legend-item">
+          <span class="legend-dot" style="background:#000F08"></span>Imports / deficit
+        </span>
+        <span class="legend-item">
+          <span class="legend-dot" style="background:#EF9F27"></span>Malaysia
+        </span>
+        <span class="legend-item">
+          <span class="legend-dot" style="background:#B4B2A9"></span>Other countries
+        </span>
+      </div>
     </div>
+
+    <!-- Right: key stat cards -->
+    <div style="
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      flex-shrink: 0;
+      width: 430px;
+    ">
+
+      <div style="
+        border-left: 3px solid #FB3640;
+        padding: 14px 16px;
+        background: rgba(0,0,0,0.03);
+        border-radius: 0 6px 6px 0;
+      ">
+        <div style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.55; margin-bottom: 8px; font-weight: 600;">Total Exports (2023)</div>
+        <div style="font-size: 36px; font-weight: 700; line-height: 1; color: #FB3640; margin-bottom: 6px;">$301B</div>
+        <div style="font-size: 13px; opacity: 0.6;">USD merchandise exports</div>
+      </div>
+
+      <div style="
+        border-left: 3px solid #EF9F27;
+        padding: 14px 16px;
+        background: rgba(0,0,0,0.03);
+        border-radius: 0 6px 6px 0;
+      ">
+        <div style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.55; margin-bottom: 8px; font-weight: 600;">Trade Openness</div>
+        <div style="font-size: 36px; font-weight: 700; line-height: 1; color: #EF9F27; margin-bottom: 6px;">146%</div>
+        <div style="font-size: 13px; opacity: 0.6;">Trade-to-GDP ratio</div>
+      </div>
+
+      <div style="
+        border-left: 3px solid #FB3640;
+        padding: 14px 16px;
+        background: rgba(0,0,0,0.03);
+        border-radius: 0 6px 6px 0;
+      ">
+        <div style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.55; margin-bottom: 8px; font-weight: 600;">Trade Surplus Streak</div>
+        <div style="font-size: 36px; font-weight: 700; line-height: 1; color: #FB3640; margin-bottom: 6px;">25+ yrs</div>
+        <div style="font-size: 13px; opacity: 0.6;">Consecutive surplus since 1998</div>
+      </div>
+
+      <div style="
+        border-left: 3px solid #EF9F27;
+        padding: 14px 16px;
+        background: rgba(0,0,0,0.03);
+        border-radius: 0 6px 6px 0;
+      ">
+        <div style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.55; margin-bottom: 8px; font-weight: 600;">Top Trading Partner</div>
+        <div style="font-size: 36px; font-weight: 700; line-height: 1; color: #EF9F27; margin-bottom: 6px;">China</div>
+        <div style="font-size: 13px; opacity: 0.6;">Leading since 2010</div>
+      </div>
+
+    </div>
+
   </header>
 
   <!-- Section 1 -->
